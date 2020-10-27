@@ -1,0 +1,33 @@
+<div class="container mt-5" style="padding-bottom: 20%">
+    <form action="/add_vote" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Ten Mon An</label>
+            <input type="text" name="tenmonan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Ten Mon An">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Ten Shop</label>
+            <input name="tenshop" type="text" class="form-control" id="exampleInputPassword1" placeholder="Ten Shop">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Dia chi</label>
+            <input name="diachi" type="number" class="form-control" id="exampleInputPassword1" placeholder="Dia chi">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Gio Mo Cua</label>
+            <input name="time" type="text" class="form-control" id="exampleInputPassword1" placeholder="Gio Mo Cua">
+        </div>
+
+        <div class="btn btn-outline-success btn-rounded waves-effect btn-sm float-left w-full text-left">
+            <span>Choose file</span>
+            <input type="file" name="fileimage" >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Ban co thich</label>
+            <input name="like" type="text" class="form-control" id="exampleInputPassword1" placeholder="Ban co thich">
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Thêm mon an</button>
+    </form>
+
+</div>
+
