@@ -3,20 +3,20 @@ import mongoose,{Schema,model} from 'mongoose'
 
 export interface Vote extends mongoose.Document{
     tenMonAn:string,
-    tenShop: string,
+    tenCuahang: string,
     diaChi: string,
     gioMoCua: string,
-    Anh: string,
+    nameImage: string,
     like: string
 }
 
 const VoteSchema = new Schema(
     {
         tenMonAn: String,
-        tenShop: String,
+        tenCuahang: String,
         diaChi: String,
         gioMoCua: String,
-        Anh: String,
+        nameImage: String,
         like: String
     }
 );

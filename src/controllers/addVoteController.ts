@@ -20,11 +20,11 @@ const storage = multer.diskStorage({
 
 class AddVoteController {
     public index(request: Request, response: Response) {
-        response.render('vote/add_Vote', {title: 'Thêm mon an'})
+        response.render('vote/add_Vote', {title: 'Thêm món ăn'})
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).single('selectFile')
+        const upload = await multer({storage}).single('Anh')
         upload(request, response, (err) => {
             if (err) {
                 response.send(err)
@@ -32,10 +32,10 @@ class AddVoteController {
             }
             const vote: Vote = new VoteModel({
                 tenMonAn: request.body.tenMonAn,
-                tenShop: request.body.tenShop,
+                tenCuahang: request.body.tenCuahang,
                 diaChi: request.body.diaChi,
                 gioMoCua: request.body.gioMoCua,
-                Anh: 'uploads/'+nameImage,
+                nameImage: 'uploads/'+nameImage,
                 like: request.body.like
             })
             vote.save();

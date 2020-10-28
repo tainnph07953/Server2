@@ -15,7 +15,6 @@
                                 <th style="text-align: center">Địa chỉ cửa hàng</th>
                                 <th style="text-align: center">Gio Mo Cua</th>
                                 <th style="text-align: center">Ban Co Thich</th>
-                                <th style="text-align: center">Chỉnh sửa</th>
                                 <th style="text-align: center">Xóa</th>
                             </tr>
                             </thead>
@@ -28,7 +27,6 @@
                                 <th style="text-align: center">Địa chỉ cửa hàng</th>
                                 <th style="text-align: center">Gio Mo Cua</th>
                                 <th style="text-align: center">Ban Co Thich</th>
-                                <th style="text-align: center">Chỉnh sửa</th>
                                 <th style="text-align: center">Xóa</th>
                             </tr>
                             </tfoot>
@@ -36,7 +34,7 @@
                             {{#each listVote as |item i|}}
                                 <tr>
                                     <td style="width:150px; height: 100px "><img style="object-fit: cover;"
-                                                                                 src="{{this.Anh}}" height=100 width=150></td>
+                                                                                 src="{{this.nameImage}}" height=100 width=150></td>
                                     <td hidden>
                                         <div style="width:100px;text-align: center;height: 100px"
                                              class="overflow-hidden">{{this._id}}</div>
@@ -47,7 +45,7 @@
                                     </td>
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
-                                            {{this.tenShop}}</div>
+                                            {{this.tenCuahang}}</div>
                                     </td>
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
@@ -63,9 +61,6 @@
                                     </td>
                                     <td>
                                         <div style="text-align: center;padding-top: 15%;height: 100px">
-                                            <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                    data-target="#modalUpdate{{i}}" data-whatever="@mdo">Chỉnh sửa
-                                            </button>
                                             <div class="modal fade" id="modalUpdate{{i}}" tabindex="-1" role="dialog"
                                                  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">

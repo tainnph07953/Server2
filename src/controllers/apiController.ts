@@ -4,7 +4,6 @@ import FavoriteModel, {Favorite} from '../models/Favorite'
 import CustomerModel, {Customer} from "../models/Customer";
 import OrderDetailModel, {OrderDetail} from "../models/OrderDetail";
 import OrderModel, {Order} from "../models/Order";
-
 import VoteModel, {Vote} from "../models/Vote";
 import mongoose from "mongoose";
 import log = Handlebars.log;
@@ -15,12 +14,14 @@ class ApiController {
         const listVote = await VoteModel.find().lean()
         response.send(listVote)
     }
+
     public async getAllProduct(request: Request, response: Response): Promise<void> {
         const listProduct = await ProductModel.find().lean()
         response.send(listProduct)
     }
+
     public async getAllFavorite(request: Request, response: Response): Promise<void> {
-        const listFavorite = await FavoriteModel.find().lean()
+        const listFavorite = await VoteModel.find().lean()
         response.send(listFavorite)
     }
 
@@ -58,9 +59,9 @@ class ApiController {
             response.send(order.status.toString());
         }
     }
+
     public async getOrderIsSend(request: Request, response: Response): Promise<void> {
         const [order] = await Promise.all([OrderModel.findOne({idCustomer: request.body.idCustomer}).lean()])
-
         if (order != null) {
             response.send(order.isSend.toString());
         }
