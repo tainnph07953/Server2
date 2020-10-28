@@ -15,6 +15,8 @@ import OrderRouter from './routes/order'
 import NotEnoughProductRouter from './routes/not_enough_product'
 import FavoriteRouter from './routes/favorite'
 import ApiRouter from './routes/api'
+import AddVote from './routes/add_vote'
+import VoteRouter from "./routes/vote";
 import {allowInsecurePrototypeAccess} from "@handlebars/allow-prototype-access";
 import {addVoteController} from "./controllers/addVoteController";
 // Initializations
@@ -22,7 +24,7 @@ const app = express();
 import ('./database')
 
 // Setting
-app.set('port', process.env.PORT || 7000);
+app.set('port', process.env.PORT || 6000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', hbs({
     extname: '.hbs',
@@ -49,7 +51,8 @@ app.use('/statistical', StatisticalRouter)
 app.use('/favorite',FavoriteRouter)
 app.use('/order', OrderRouter)
 app.use('/not_enough_product', NotEnoughProductRouter)
-app.use('/vote', )
+app.use('/add_vote', AddVote)
+app.use('/vote', VoteRouter)
 app.use('/api', ApiRouter)
 
 

@@ -31,16 +31,16 @@ class AddVoteController {
                 return
             }
             const vote: Vote = new VoteModel({
-                tenmonan: request.body.tenmonan,
-                tenshop: request.body.tenshop,
-                diachi: request.body.diachi,
-                giomocua: request.body.time,
-                hinhanh: 'uploads/'+nameImage,
-                bancothich: request.body.like
+                tenMonAn: request.body.tenMonAn,
+                tenShop: request.body.tenShop,
+                diaChi: request.body.diaChi,
+                gioMoCua: request.body.gioMoCua,
+                Anh: 'uploads/'+nameImage,
+                like: request.body.like
             })
             vote.save();
             nameImage=''
-            response.redirect('/product')
+            response.redirect('vote')
         })
     }
 }

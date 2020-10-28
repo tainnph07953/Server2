@@ -7,12 +7,13 @@ import OrderModel, {Order} from "../models/Order";
 
 import VoteModel, {Vote} from "../models/Vote";
 import mongoose from "mongoose";
+import log = Handlebars.log;
 
 
 class ApiController {
     public async getAllVote(request: Request, response: Response): Promise<void> {
-        const listProduct = await VoteModel.find().lean()
-        response.send(listProduct)
+        const listVote = await VoteModel.find().lean()
+        response.send(listVote)
     }
     public async getAllProduct(request: Request, response: Response): Promise<void> {
         const listProduct = await ProductModel.find().lean()

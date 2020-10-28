@@ -6,8 +6,8 @@ export interface Vote extends mongoose.Document{
     tenShop: string,
     diaChi: string,
     gioMoCua: string,
-    hinhAnh: string,
-    banCoThich: string
+    Anh: string,
+    like: string
 }
 
 const VoteSchema = new Schema(
@@ -16,9 +16,9 @@ const VoteSchema = new Schema(
         tenShop: String,
         diaChi: String,
         gioMoCua: String,
-        hinhAnh: String,
-        banCoThich: String
+        Anh: String,
+        like: String
     }
 );
 
-export default model<Vote>('vote', VoteSchema,"votes")
+export default model<Vote>('Vote', VoteSchema,"votes")
