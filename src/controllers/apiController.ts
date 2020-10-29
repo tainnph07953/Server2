@@ -6,7 +6,6 @@ import OrderDetailModel, {OrderDetail} from "../models/OrderDetail";
 import OrderModel, {Order} from "../models/Order";
 import VoteModel, {Vote} from "../models/Vote";
 import mongoose from "mongoose";
-import log = Handlebars.log;
 
 
 class ApiController {

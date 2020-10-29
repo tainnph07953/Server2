@@ -38,6 +38,20 @@ class AddVoteController {
                 nameImage: 'uploads/'+nameImage,
                 like: request.body.like
             })
+            // if (request.body.like === 1)
+            //     return "nên thử";
+            // else if (request.body.like === 2)
+            //     return "Không nên thử";
+            // switch (request.body.like) {
+            //     // tslint:disable-next-line:no-unused-expression
+            //     case 1:
+            //         return "nên thử";
+            //         break;
+            //     // tslint:disable-next-line:no-unused-expression
+            //     case 2:
+            //         return "không nên thử";
+            //         break;
+            // }
             vote.save();
             nameImage=''
             response.redirect('vote')

@@ -35,58 +35,6 @@ class ListVoteController {
             }
         }))
     }
-
-    public async update(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).single('selectFile')
-        upload(request, response, (err) => {
-            if (err) {
-                response.send(err)
-                return
-            }
-
-            if (nameImage.toString() === "") {
-                VoteModel.findByIdAndUpdate(request.body.id,
-                    {
-                        tenMonAn: request.body.tenmonanVoteUpdate,
-                        tenShop: request.body.tenshopVoteUpdate,
-                        diaChi: request.body.diachiVoteUpdate,
-                        gioMoCua: request.body.timeVoteUpdate,
-                        like: request.body.likeVoteUpdate,
-                        // tslint:disable-next-line:no-shadowed-variable
-                    }, err => {
-                        if (err) {
-                            // tslint:disable-next-line:no-console
-                            response.send(err)
-                        } else {
-                            response.redirect('/vote')
-                        }
-                    }
-                )
-
-            } else {
-                VoteModel.findByIdAndUpdate(request.body.id,
-                    {
-                        tenMonAn: request.body.tenmonanVoteUpdate,
-                        tenShop: request.body.tenshopVoteUpdate,
-                        diaChi: request.body.diachiVoteUpdate,
-                        gioMoCua: request.body.timeVoteUpdate,
-                        like: request.body.bancothichVoteUpdate,
-                        Anh: 'uploads/' + nameImage
-                        // tslint:disable-next-line:no-shadowed-variable
-                    }, err => {
-                        if (err) {
-                            // tslint:disable-next-line:no-console
-                            response.send(err)
-                        } else {
-                            response.redirect('/vote')
-                        }
-                    }
-                )
-            }
-            nameImage = ''
-        })
-
-    }
 }
 
 export const lisVoteController = new ListVoteController()

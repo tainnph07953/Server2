@@ -17,7 +17,6 @@ import FavoriteRouter from './routes/favorite'
 import ApiRouter from './routes/api'
 import AddVote from './routes/add_vote'
 import VoteRouter from "./routes/vote";
-import {allowInsecurePrototypeAccess} from "@handlebars/allow-prototype-access";
 import {addVoteController} from "./controllers/addVoteController";
 // Initializations
 const app = express();
