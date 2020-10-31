@@ -24,7 +24,7 @@ class AddVoteController {
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).array('Anh',10)
+        const upload = await multer({storage}).single('Anh')
         upload(request, response, (err) => {
             if (err) {
                 response.send(err)
