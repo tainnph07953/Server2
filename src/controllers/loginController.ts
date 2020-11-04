@@ -17,6 +17,7 @@ class LoginController {
     public async onLogin(request: Request, response: Response): Promise<void> {
         const userNameReq = request.body.userName
         const passwordReq = request.body.password
+        const roleReq = request.body.role
         const [users] = await Promise.all([UserModel.findOne({userName: userNameReq, password: passwordReq},)]);
         if (users!=null) {
             response.redirect('/home')

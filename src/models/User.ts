@@ -8,7 +8,7 @@ export interface User extends mongoose.Document{
 const UserSchema= new Schema(
     {
         userName: String,
-        password: String
+        password: String,
     }
 );
 

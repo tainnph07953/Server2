@@ -7,7 +7,8 @@ export interface Product extends mongoose.Document{
     urlImage:string,
     amount:number,
     brand:string,
-    size:string
+    size:string,
+    tukhoa: string
 }
 const ProductSchema=new Schema(
     {
@@ -16,7 +17,8 @@ const ProductSchema=new Schema(
         urlImage:String,
         amount:Number,
         brand:String,
-        size:String
+        size:String,
+        tukhoa:String
     }
 )
 export default model<Product>('Product',ProductSchema,"products")

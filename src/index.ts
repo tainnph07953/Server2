@@ -20,6 +20,8 @@ import AddVote from './routes/add_vote'
 import VoteRouter from "./routes/vote";
 import {addVoteController} from "./controllers/addVoteController";
 import Admin,{usermobile} from "./models/userMobile/userMobile";
+import product,{Product} from "./models/Product";
+import multer from "multer";
 // Initializations
 const app = express();
 import ('./database')
@@ -67,6 +69,32 @@ app.listen(app.get('port'), () => {
     // tslint:disable-next-line:no-console
     console.log(`Hello ${app.get('port')}`);
 });
+
+
+app.post('/food', async (req: Request, res: Response)=>{
+    const foodter = {
+        name: req.body.name,
+        price: req.body.price,
+        urlImage: req.body.urlImage,
+        amount: req.body.amount,
+        brand: req.body.brand,
+        size: req.body.size
+    };
+    const fooddata = await product.find({brand: req.body.brand});
+    if (fooddata.length === 0){
+        const foods = await product.create(foodter)
+        try {
+            res.send({status: true, foodter:foods});
+        }catch (e) {
+            res.send({status: false,msg: 'Co loi xay ra: ' +e.message})
+        }
+    }else {
+        res.send({status: false, msg:"Cửa hàng đã tồn tại"});
+        // tslint:disable-next-line:no-console
+        console.log('Cửa hàng da ton tai')
+    }
+});
+
 app.post('/signupuser', async (req: Request, res: Response)=>{
     const user = {
         userName: req.body.userName,

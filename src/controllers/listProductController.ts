@@ -1,7 +1,6 @@
 import {Request, Response} from 'express'
 import ProductModel, {Product} from '../models/Product'
 import multer from "multer";
-import OrderModel from "../models/Order";
 
 let nameImage: string = '';
 const storage = multer.diskStorage({
@@ -14,7 +13,7 @@ const storage = multer.diskStorage({
         if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPEG)$/)) {
             return callback(new Error('Sai dinh dang'), "");
         }
-        const newNameFile = `${Date.now()}-Nambdph07444-${file.originalname}`
+        const newNameFile = `${Date.now()}-tainnph07953-${file.originalname}`
         nameImage = newNameFile;
         callback(null, newNameFile);
     }
@@ -23,7 +22,7 @@ const storage = multer.diskStorage({
 class ListProductController {
     public async index(request: Request, response: Response): Promise<void> {
         const listProduct = await ProductModel.find().lean()
-        response.render('products/list_product', {listProduct, title: 'Danh sách sản phẩm'})
+        response.render('products/list_product', {listProduct, title: 'Danh sách món ăn'})
     }
 
     public async delete(request: Request, response: Response): Promise<void> {
@@ -54,6 +53,7 @@ class ListProductController {
                         amount: request.body.amountProductUpdate,
                         brand: request.body.brandProductUpdate,
                         size: request.body.sizeProductUpdate,
+                        tukhoa: request.body.tukhoaUpdate,
                         // tslint:disable-next-line:no-shadowed-variable
                     }, err => {
                         if (err) {
@@ -73,6 +73,7 @@ class ListProductController {
                         amount: request.body.amountProductUpdate,
                         brand: request.body.brandProductUpdate,
                         size: request.body.sizeProductUpdate,
+                        tukhoa: request.body.tukhoaUpdate,
                         urlImage: 'uploads/' + nameImage
                         // tslint:disable-next-line:no-shadowed-variable
                     }, err => {

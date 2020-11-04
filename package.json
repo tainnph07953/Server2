@@ -14,16 +14,21 @@
   "license": "ISC",
   "dependencies": {
     "@handlebars/allow-prototype-access": "^1.0.3",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cloudinary": "^1.21.0",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
-    "mongoose": "^5.9.10",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.11",
     "multer": "^1.4.2",
-    "tslint": "^6.1.1"
+    "tslint": "^6.1.1",
+    "validator": "^13.1.17"
   },
   "devDependencies": {
     "@types/express-handlebars": "^3.1.0",
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/mongoose": "^5.7.13",
     "@types/multer": "^1.4.2",
     "handlebars": "^4.5.0",

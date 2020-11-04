@@ -15,6 +15,7 @@
                                     <th style="text-align: center">Địa chỉ cửa hàng</th>
                                     <th style="text-align: center">Giá bán</th>
                                     <th style="text-align: center">Số lượng</th>
+                                    <th style="text-align: center">Từ Khóa</th>
                                     <th style="text-align: center">Chỉnh sửa</th>
                                     <th style="text-align: center">Xóa</th>
                                 </tr>
@@ -28,6 +29,7 @@
                                     <th style="text-align: center">Địa chỉ cửa hàng</th>
                                     <th style="text-align: center">Giá bán</th>
                                     <th style="text-align: center">Số lượng</th>
+                                    <th style="text-align: center">Từ Khóa</th>
                                     <th style="text-align: center">Chỉnh sửa</th>
                                     <th style="text-align: center">Xóa</th>
                                 </tr>
@@ -60,6 +62,10 @@
                                     <td>
                                         <div style="width:50px;text-align: center;height: 100px">
                                             {{this.amount}}</div>
+                                    </td>
+                                    <td>
+                                        <div style="width:50px;text-align: center;height: 100px">
+                                            {{this.tukhoa}}</div>
                                     </td>
                                     <td>
                                         <div style="text-align: center;padding-top: 15%;height: 100px">
@@ -128,6 +134,14 @@
                                                                         id="exampleInputPassword1"
                                                                         name="amountProductUpdate"
                                                                         value="{{this.amount}}">
+                                                                </div>
+                                                                <label for="exampleInputEmail1"
+                                                                       class="w-full text-left">Từ Khóa</label>
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           id="exampleInputPassword1"
+                                                                           name="tukhoaUpdate"
+                                                                           value="{{this.tukhoa}}">
                                                                 </div>
 
                                                                 <div class="w-full">

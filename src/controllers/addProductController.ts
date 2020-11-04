@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
         if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
             return callback(new Error('Sai dinh dang'), "");
         }
-        const newNameFile = `${Date.now()}-Nambdph07444-${file.originalname}`
+        const newNameFile = `${Date.now()}-tainnph07953-${file.originalname}`
         nameImage=newNameFile;
         callback(null, newNameFile);
     }
@@ -20,11 +20,11 @@ const storage = multer.diskStorage({
 
 class AddProductController {
     public index(request: Request, response: Response) {
-        response.render('products/add_product/add.hbs', {title: 'Thêm sản phẩm'})
+        response.render('products/add_product/add.hbs', {title: 'Thêm món ăn'})
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).single('selectFile')
+        const upload = await multer({storage}).array('selectFile',10);
         upload(request, response, (err) => {
             if (err) {
                response.send(err)
@@ -36,6 +36,7 @@ class AddProductController {
                 amount: request.body.amount,
                 brand: request.body.brand,
                 size: request.body.size,
+                tukhoa: request.body.tukhoa,
                 urlImage: 'uploads/'+nameImage
             })
             product.save();
