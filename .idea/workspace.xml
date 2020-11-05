@@ -20,21 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/listUserInformationController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/userInformationController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/userMobile/userInformation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/add_information.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/information.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/userInformation/add_userInformation.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/userInformation/list_information.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addProductController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/listProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listProductController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/loginController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/loginController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/registerController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/registerController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/key.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/key.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/userTest/userTest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/userTest/userTest.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/products/list_product.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/products/list_product.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +89,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ProjectServer\Typescript\Assignment\src\views\products" />
-      <recent name="D:\ProjectServer\Typescript\Assignment\src\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DuAnTotNghiep\Server\src\controllers" />
       <recent name="$PROJECT_DIR$/src/views/favorite" />
       <recent name="D:\ProjectServer\Typescript\Assignment\src\views\enough_product" />
       <recent name="D:\ProjectServer\Typescript\Assignment\src\views\products\add_product" />
+      <recent name="D:\ProjectServer\Typescript\Assignment\src\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectServer\Typescript\Assignment\src\views\products" />
       <recent name="D:\ProjectServer\Typescript\Assignment\src\public" />
     </key>
   </component>
@@ -212,8 +209,22 @@
       <workItem from="1604368943907" duration="1109000" />
       <workItem from="1604370421508" duration="5000" />
       <workItem from="1604454317894" duration="1196000" />
-      <workItem from="1604461408944" duration="500000" />
+      <workItem from="1604461408944" duration="845000" />
+      <workItem from="1604472876648" duration="3813000" />
+      <workItem from="1604477684345" duration="434000" />
+      <workItem from="1604481193212" duration="2723000" />
+      <workItem from="1604494445260" duration="888000" />
+      <workItem from="1604540890691" duration="91000" />
+      <workItem from="1604543491027" duration="548000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit code server user and food">
+      <created>1604461980918</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604461980918</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +242,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit code server user and food" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit code server user and food" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -259,6 +274,10 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
+    <state x="555" y="0" key="CommitChangelistDialog2" timestamp="1604461978742">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="555" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1604461978742" />
     <state width="1894" height="309" key="GridCell.Tab.-1.bottom" timestamp="1603899112505">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
@@ -367,6 +386,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604461987633">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604461987633" />
     <state x="0" y="401" width="1857" height="290" key="dock-window-1" timestamp="1603899490420">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
@@ -379,11 +402,11 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="697" y="0" width="607" height="768" key="find.popup/0.0.1304.768@0.0.1304.768" timestamp="1603853366529" />
-    <state x="308" y="172" key="run.anything.popup" timestamp="1604290545719">
+    <state x="308" y="172" key="run.anything.popup" timestamp="1604476592253">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768/1366.0.1280.994@0.0.1304.768" timestamp="1603871043356" />
-    <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1604290545719" />
+    <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1604476592253" />
     <state x="2461" y="23" key="search.everywhere.popup" timestamp="1602753877594">
       <screen x="1920" y="23" width="1920" height="974" />
     </state>

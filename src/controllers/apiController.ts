@@ -5,10 +5,15 @@ import CustomerModel, {Customer} from "../models/Customer";
 import OrderDetailModel, {OrderDetail} from "../models/OrderDetail";
 import OrderModel, {Order} from "../models/Order";
 import VoteModel, {Vote} from "../models/Vote";
+import UserInformationModel,{userInformation} from "../models/userMobile/userInformation";
 import mongoose from "mongoose";
 
 
 class ApiController {
+    public async  getAllInformation(request: Request, response: Response): Promise<void> {
+        const listInformation = await UserInformationModel.find().lean()
+        response.send(listInformation)
+    }
     public async getAllVote(request: Request, response: Response): Promise<void> {
         const listVote = await VoteModel.find().lean()
         response.send(listVote)

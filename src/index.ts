@@ -18,6 +18,8 @@ import FavoriteRouter from './routes/favorite'
 import ApiRouter from './routes/api'
 import AddVote from './routes/add_vote'
 import VoteRouter from "./routes/vote";
+import AddInformation from "./routes/add_information";
+import InformationRouter from "./routes/information";
 import {addVoteController} from "./controllers/addVoteController";
 import Admin,{usermobile} from "./models/userMobile/userMobile";
 import product,{Product} from "./models/Product";
@@ -57,6 +59,8 @@ app.use('/order', OrderRouter)
 app.use('/not_enough_product', NotEnoughProductRouter)
 app.use('/add_vote', AddVote)
 app.use('/vote', VoteRouter)
+app.use('/add_userInformation', AddInformation)
+app.use('/information', InformationRouter)
 app.use('/api', ApiRouter)
 
 

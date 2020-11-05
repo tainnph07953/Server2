@@ -15,5 +15,6 @@ router.post('/updateOder', apiController.updateOder)
 router.post('/getOrderStatus', apiController.getOrderStatus)
 router.post('/getOrderIsSend', apiController.getOrderIsSend)
 router.post('/getVote', apiController.getAllVote)
+router.post('/getInformation', apiController.getAllInformation)
 
 export default router
