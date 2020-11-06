@@ -48,10 +48,10 @@ app.use(express.urlencoded({extended: false}));
 // Routes
 app.use('/', IndexRouter)
 app.use('/login', LoginRouter)
+app.use('/product',ProductRouter)
 app.use('/home', HomeRouter)
 app.use('/register',RegisterRouter)
 app.use('/customer',CustomerRouter)
-app.use('/product',ProductRouter)
 app.use('/add_product',AddProductRouter)
 app.use('/statistical', StatisticalRouter)
 app.use('/favorite',FavoriteRouter)
