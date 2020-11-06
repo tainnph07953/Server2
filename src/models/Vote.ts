@@ -3,9 +3,10 @@ import mongoose,{Schema,model} from 'mongoose'
 
 export interface Vote extends mongoose.Document{
     tenMonAn:string,
-    tenCuahang: string,
+    tenCuaHang: string,
     diaChi: string,
     gioMoCua: string,
+    gioDongCua: string,
     nameImage: string,
     like: string
 }
@@ -13,9 +14,10 @@ export interface Vote extends mongoose.Document{
 const VoteSchema = new Schema(
     {
         tenMonAn: String,
-        tenCuahang: String,
+        tenCuaHang: String,
         diaChi: String,
         gioMoCua: String,
+        gioDongCua: String,
         nameImage: String,
         like: String
     }

@@ -13,8 +13,9 @@
                                 <th style="text-align: center">Tên món ăn</th>
                                 <th style="text-align: center">Tên cửa hàng</th>
                                 <th style="text-align: center">Địa chỉ cửa hàng</th>
-                                <th style="text-align: center">Gio Mo Cua</th>
-                                <th style="text-align: center">Ban Co Thich</th>
+                                <th style="text-align: center">Giờ mở của</th>
+                                <th style="text-align: center">Giờ đóng của</th>
+                                <th style="text-align: center">Bạn có thích</th>
                                 <th style="text-align: center">Xóa</th>
                             </tr>
                             </thead>
@@ -25,16 +26,17 @@
                                 <th style="text-align: center">Tên món ăn</th>
                                 <th style="text-align: center">Tên cửa hàng</th>
                                 <th style="text-align: center">Địa chỉ cửa hàng</th>
-                                <th style="text-align: center">Gio Mo Cua</th>
-                                <th style="text-align: center">Ban Co Thich</th>
+                                <th style="text-align: center">Giờ mở cửa</th>
+                                <th style="text-align: center">Giờ đóng cửa</th>
+                                <th style="text-align: center">Bạn có thích</th>
                                 <th style="text-align: center">Xóa</th>
                             </tr>
                             </tfoot>
                             <tbody>
                             {{#each listVote as |item i|}}
                                 <tr>
-                                    <td style="width:150px; height: 100px "><img style="object-fit: cover;"
-                                                                                 src="{{this.nameImage}}" height=100 width=150></td>
+                                    <td style="width:100px; height: 100px ">
+                                        <img style="object-fit: cover;" src="{{this.nameImage}}" height=100 width=150></td>
                                     <td hidden>
                                         <div style="width:100px;text-align: center;height: 100px"
                                              class="overflow-hidden">{{this._id}}</div>
@@ -45,7 +47,7 @@
                                     </td>
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
-                                            {{this.tenCuahang}}</div>
+                                            {{this.tenCuaHang}}</div>
                                     </td>
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
@@ -54,6 +56,10 @@
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
                                             {{this.gioMoCua}}</div>
+                                    </td>
+                                    <td>
+                                        <div style="width:100px;text-align: center;height: 100px">
+                                            {{this.gioDongCua}}</div>
                                     </td>
                                     <td>
                                         <div style="width:50px;text-align: center;height: 100px">

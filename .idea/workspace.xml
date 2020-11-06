@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/listUserInformationController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/userInformationController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/userMobile/userInformation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/add_information.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/information.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/userInformation/add_userInformation.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/userInformation/list_information.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +78,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="ts.external.directory.path" value="D:\DuAnTotNghiep\Server\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\DucHuynh\Desktop\Server2\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -129,7 +124,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,6 +211,9 @@
       <workItem from="1604494445260" duration="888000" />
       <workItem from="1604540890691" duration="91000" />
       <workItem from="1604543491027" duration="548000" />
+      <workItem from="1604567105595" duration="2918000" />
+      <workItem from="1604570065486" duration="1164000" />
+      <workItem from="1604628843185" duration="1177000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -228,20 +226,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit code server user and food" />
@@ -294,28 +291,32 @@
       <screen x="0" y="23" width="1920" height="974" />
     </state>
     <state width="1894" height="309" key="GridCell.Tab.-1.right/0.23.1920.974@0.23.1920.974" timestamp="1603899112504" />
-    <state width="1246" height="175" key="GridCell.Tab.0.bottom" timestamp="1604290224742">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1604569976611">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1246" height="175" key="GridCell.Tab.0.bottom/0.0.1304.768@0.0.1304.768" timestamp="1604290224742" />
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604569976611" />
     <state width="1894" height="248" key="GridCell.Tab.0.bottom/0.23.1920.972@0.23.1920.972" timestamp="1603898989408" />
     <state width="1894" height="309" key="GridCell.Tab.0.bottom/0.23.1920.974@0.23.1920.974" timestamp="1603899173057" />
-    <state width="1246" height="175" key="GridCell.Tab.0.center" timestamp="1604290224742">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1604569976610">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1246" height="175" key="GridCell.Tab.0.center/0.0.1304.768@0.0.1304.768" timestamp="1604290224742" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604569976610" />
     <state width="1894" height="248" key="GridCell.Tab.0.center/0.23.1920.972@0.23.1920.972" timestamp="1603898989407" />
     <state width="1894" height="309" key="GridCell.Tab.0.center/0.23.1920.974@0.23.1920.974" timestamp="1603899173056" />
-    <state width="1246" height="175" key="GridCell.Tab.0.left" timestamp="1604290224741">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1604569976610">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1246" height="175" key="GridCell.Tab.0.left/0.0.1304.768@0.0.1304.768" timestamp="1604290224741" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604569976610" />
     <state width="1894" height="248" key="GridCell.Tab.0.left/0.23.1920.972@0.23.1920.972" timestamp="1603898989406" />
     <state width="1894" height="309" key="GridCell.Tab.0.left/0.23.1920.974@0.23.1920.974" timestamp="1603899173056" />
-    <state width="1246" height="175" key="GridCell.Tab.0.right" timestamp="1604290224742">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1604569976611">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1246" height="175" key="GridCell.Tab.0.right/0.0.1304.768@0.0.1304.768" timestamp="1604290224742" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1604569976611" />
     <state width="1894" height="248" key="GridCell.Tab.0.right/0.23.1920.972@0.23.1920.972" timestamp="1603898989408" />
     <state width="1894" height="309" key="GridCell.Tab.0.right/0.23.1920.974@0.23.1920.974" timestamp="1603899173057" />
     <state width="1894" height="309" key="GridCell.Tab.1.bottom" timestamp="1603899173059">
