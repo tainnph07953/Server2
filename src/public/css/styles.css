@@ -9993,9 +9993,6 @@ body {
   min-width: 0;
 }
 
-#layoutSidenav {
-  display: flex;
-}
 #layoutSidenav #layoutSidenav_nav {
   flex-basis: 225px;
   flex-shrink: 0;
