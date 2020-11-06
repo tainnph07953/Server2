@@ -32,9 +32,10 @@ class AddVoteController {
             }
             const vote: Vote = new VoteModel({
                 tenMonAn: request.body.tenMonAn,
-                tenCuahang: request.body.tenCuahang,
+                tenCuaHang: request.body.tenCuaHang,
                 diaChi: request.body.diaChi,
                 gioMoCua: request.body.gioMoCua,
+                gioDongCua: request.body.gioDongCua,
                 nameImage: 'uploads/'+nameImage,
                 like: request.body.like
             })
