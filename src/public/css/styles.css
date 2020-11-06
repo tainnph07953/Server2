@@ -9993,15 +9993,12 @@ body {
   min-width: 0;
 }
 
-#layoutSidenav {
-  display: flex;
-}
 #layoutSidenav #layoutSidenav_nav {
   flex-basis: 225px;
   flex-shrink: 0;
   transition: transform 0.15s ease-in-out;
   z-index: 1038;
-  transform: translateX(-225px);
+  
 }
 #layoutSidenav #layoutSidenav_content {
   position: relative;

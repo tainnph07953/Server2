@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 
 class AddVoteController {
     public index(request: Request, response: Response) {
-        response.render('vote/add_Vote', {title: 'Thêm món ăn'})
+        response.render('vote/add_Vote', {title: 'Đánh giá món ăn'})
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {

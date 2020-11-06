@@ -7,41 +7,42 @@
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
-                                <tr>
-                                    <th style="text-align: center">Ảnh món ăn</th>
-                                    <th hidden style="text-align: center">Mã sản phẩm</th>
-                                    <th style="text-align: center">Tên món ăn</th>
-                                    <th style="text-align: center">Tên cửa hàng</th>
-                                    <th style="text-align: center">Địa chỉ cửa hàng</th>
-                                    <th style="text-align: center">Giá bán</th>
-                                    <th style="text-align: center">Số lượng</th>
-                                    <th style="text-align: center">Từ Khóa</th>
-                                    <th style="text-align: center">Chỉnh sửa</th>
-                                    <th style="text-align: center">Xóa</th>
-                                </tr>
+                            <tr>
+                                <th style="text-align: center">Ảnh món ăn</th>
+                                <th hidden style="text-align: center">Mã sản phẩm</th>
+                                <th style="text-align: center">Tên món ăn</th>
+                                <th style="text-align: center">Tên cửa hàng</th>
+                                <th style="text-align: center">Địa chỉ cửa hàng</th>
+                                <th style="text-align: center">Giá bán</th>
+                                <th style="text-align: center">Số lượng</th>
+                                <th style="text-align: center">Từ Khóa</th>
+                                <th style="text-align: center">Chỉnh sửa</th>
+                                <th style="text-align: center">Xóa</th>
+                            </tr>
                             </thead>
                             <tfoot>
-                                <tr>
-                                    <th style="text-align: center">Ảnh món ăn</th>
-                                    <th hidden style="text-align: center">Mã sản phẩm</th>
-                                    <th style="text-align: center">Tên món ăn</th>
-                                    <th style="text-align: center">Tên cửa hàng</th>
-                                    <th style="text-align: center">Địa chỉ cửa hàng</th>
-                                    <th style="text-align: center">Giá bán</th>
-                                    <th style="text-align: center">Số lượng</th>
-                                    <th style="text-align: center">Từ Khóa</th>
-                                    <th style="text-align: center">Chỉnh sửa</th>
-                                    <th style="text-align: center">Xóa</th>
-                                </tr>
+                            <tr>
+                                <th style="text-align: center">Ảnh món ăn</th>
+                                <th hidden style="text-align: center">Mã sản phẩm</th>
+                                <th style="text-align: center">Tên món ăn</th>
+                                <th style="text-align: center">Tên cửa hàng</th>
+                                <th style="text-align: center">Địa chỉ cửa hàng</th>
+                                <th style="text-align: center">Giá bán</th>
+                                <th style="text-align: center">Số lượng</th>
+                                <th style="text-align: center">Từ Khóa</th>
+                                <th style="text-align: center">Chỉnh sửa</th>
+                                <th style="text-align: center">Xóa</th>
+                            </tr>
                             </tfoot>
                             <tbody>
-                                {{#each listProduct as |item i|}}
+                            {{#each listProduct as |item i|}}
                                 <tr>
                                     <td style="width:150px; height: 100px "><img style="object-fit: cover;"
-                                            src="{{this.urlImage}}" height=100 width=150></td>
+                                                                                 src="{{this.urlImage}}" height=100
+                                                                                 width=150></td>
                                     <td hidden>
                                         <div style="width:100px;text-align: center;height: 100px"
-                                            class="overflow-hidden">{{this._id}}</div>
+                                             class="overflow-hidden">{{this._id}}</div>
                                     </td>
                                     <td>
                                         <div style="width:100px;text-align: center;height: 100px">
@@ -51,7 +52,7 @@
                                         <div style="width:100px;text-align: center;height: 100px">
                                             {{this.brand}}</div>
                                     </td>
-                                   <td>
+                                    <td>
                                         <div style="width:100px;text-align: center;height: 100px">
                                             {{this.size}}</div>
                                     </td>
@@ -70,70 +71,72 @@
                                     <td>
                                         <div style="text-align: center;padding-top: 15%;height: 100px">
                                             <button type="button" class="btn btn-primary" data-toggle="modal"
-                                                data-target="#modalUpdate{{i}}" data-whatever="@mdo">Chỉnh sửa
+                                                    data-target="#modalUpdate{{i}}" data-whatever="@mdo">Chỉnh sửa
                                             </button>
                                             <div class="modal fade" id="modalUpdate{{i}}" tabindex="-1" role="dialog"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="exampleModalLabel">Chỉnh
                                                                 sửa</h5>
                                                             <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
+                                                                    aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
                                                             <form method="post" action="/product/update/"
-                                                                enctype="multipart/form-data">
+                                                                  enctype="multipart/form-data">
                                                                 <label for="exampleInputEmail1"
-                                                                    class="w-full text-left">Tên món ăn</label>
+                                                                       class="w-full text-left">Tên món ăn</label>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control"
-                                                                        id="exampleInputEmail1"
-                                                                        aria-describedby="emailHelp"
-                                                                        name="nameProductUpdate" value="{{this.name}}">
+                                                                           id="exampleInputEmail1"
+                                                                           aria-describedby="emailHelp"
+                                                                           name="nameProductUpdate"
+                                                                           value="{{this.name}}">
                                                                 </div>
                                                                 <label for="exampleInputEmail1"
-                                                                    class="w-full text-left">Tên cửa hàng</label>
+                                                                       class="w-full text-left">Tên cửa hàng</label>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control"
-                                                                        id="exampleInputEmail1"
-                                                                        aria-describedby="emailHelp"
-                                                                        name="brandProductUpdate"
-                                                                        value="{{this.brand}}">
+                                                                           id="exampleInputEmail1"
+                                                                           aria-describedby="emailHelp"
+                                                                           name="brandProductUpdate"
+                                                                           value="{{this.brand}}">
                                                                 </div>
                                                                 <label for="exampleInputEmail1"
-                                                                    class="w-full text-left">Địa chỉ cửa hàng</label>
+                                                                       class="w-full text-left">Địa chỉ cửa hàng</label>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control"
-                                                                        id="exampleInputEmail1"
-                                                                        aria-describedby="emailHelp"
-                                                                        name="sizeProductUpdate" value="{{this.size}}">
+                                                                           id="exampleInputEmail1"
+                                                                           aria-describedby="emailHelp"
+                                                                           name="sizeProductUpdate"
+                                                                           value="{{this.size}}">
                                                                 </div>
                                                                 <div class="form-group" hidden>
                                                                     <input type="text" class="form-control"
-                                                                        id="exampleInputEmail1"
-                                                                        aria-describedby="emailHelp"
-                                                                        value="{{this._id}}" name="id"
-                                                                        value="{{this.name}}">
+                                                                           id="exampleInputEmail1"
+                                                                           aria-describedby="emailHelp"
+                                                                           value="{{this._id}}" name="id"
+                                                                           value="{{this.name}}">
                                                                 </div>
                                                                 <label for="exampleInputEmail1"
-                                                                    class="w-full text-left">Giá</label>
+                                                                       class="w-full text-left">Giá</label>
                                                                 <div class="form-group">
                                                                     <input type="text" class="form-control"
-                                                                        id="exampleInputPassword1"
-                                                                        name="priceProductUpdate"
-                                                                        value="{{this.price}}">
+                                                                           id="exampleInputPassword1"
+                                                                           name="priceProductUpdate"
+                                                                           value="{{this.price}}">
                                                                 </div>
                                                                 <label for="exampleInputEmail1"
-                                                                    class="w-full text-left">Số lượng</label>
+                                                                       class="w-full text-left">Số lượng</label>
                                                                 <div class="form-group">
                                                                     <input type="number" class="form-control"
-                                                                        id="exampleInputPassword1"
-                                                                        name="amountProductUpdate"
-                                                                        value="{{this.amount}}">
+                                                                           id="exampleInputPassword1"
+                                                                           name="amountProductUpdate"
+                                                                           value="{{this.amount}}">
                                                                 </div>
                                                                 <label for="exampleInputEmail1"
                                                                        class="w-full text-left">Từ Khóa</label>
@@ -146,14 +149,14 @@
 
                                                                 <div class="w-full">
                                                                     <div
-                                                                        class="btn btn-outline-success btn-rounded waves-effect btn-sm float-left w-full text-left">
+                                                                            class="btn btn-outline-success btn-rounded waves-effect btn-sm float-left w-full text-left">
                                                                         <span>Chọn ảnh</span>
                                                                         <input type="file" name="selectFile">
                                                                     </div>
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary"
-                                                                        data-dismiss="modal">Đóng
+                                                                            data-dismiss="modal">Đóng
                                                                     </button>
                                                                     <button type="submit" class="btn btn-primary">Chỉnh
                                                                         sửa
@@ -161,7 +164,6 @@
                                                                 </div>
                                                             </form>
                                                         </div>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -170,21 +172,21 @@
                                     <td>
                                         <div style="text-align: center;padding-top: 25%;height: 100px">
                                             <button type="button" class="btn btn-primary btn-danger" data-toggle="modal"
-                                                data-target="#modelDelete{{i}}">
+                                                    data-target="#modelDelete{{i}}">
                                                 Xóa
                                             </button>
 
                                             <!-- Modal -->
                                             <form method="get" action="/product/delete/{{this._id}}">
                                                 <div class="modal fade" id="modelDelete{{i}}" tabindex="-1"
-                                                    role="dialog" aria-labelledby="exampleModalLabel"
-                                                    aria-hidden="true">
+                                                     role="dialog" aria-labelledby="exampleModalLabel"
+                                                     aria-hidden="true">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
                                                                 <h5 class="modal-title" id="exampleModalLabel">Xóa</h5>
                                                                 <button type="button" class="close" data-dismiss="modal"
-                                                                    aria-label="Close">
+                                                                        aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                             </div>
@@ -193,10 +195,10 @@
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-dark"
-                                                                    data-dismiss="modal">Đóng
+                                                                        data-dismiss="modal">Đóng
                                                                 </button>
                                                                 <button type="submit"
-                                                                    class="btn btn-primary btn-danger">Xóa
+                                                                        class="btn btn-primary btn-danger">Xóa
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -206,7 +208,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                {{/each}}
+                            {{/each}}
                             </tbody>
                         </table>
                     </div>
