@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
-    </list>
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="Chỉnh sửa giao diện trên Mobile" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +41,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -242,7 +241,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit code server user and food" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit code server user and food" />
+    <MESSAGE value="Chỉnh sửa giao diện trên Mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chỉnh sửa giao diện trên Mobile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -387,10 +387,11 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604461987633">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="300" y="115" key="Vcs.Push.Dialog.v2" timestamp="1604652482875">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604461987633" />
+    <state x="300" y="115" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604652482875" />
     <state x="0" y="401" width="1857" height="290" key="dock-window-1" timestamp="1603899490420">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
