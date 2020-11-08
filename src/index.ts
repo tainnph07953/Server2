@@ -103,25 +103,17 @@ app.post('/food', async (req: Request, res: Response)=>{
 });
 
 app.post('/updateLike', async (req: Request, res: Response)=>{
-    const vote = {
-        tenMonAn: req.body.tenMonAn,
-        tenCuaHang: req.body.tenCuaHang,
-        like: req.body.like,
-        dislike: req.body.dislike
-    };
-    const votedata = await VoteData.find({tenMonAn: req.body.tenMonAn, tenCuaHang: req.body.tenCuaHang});
-    if (votedata.length === 0){
-        const votes = await VoteData.update(vote,databases)
-        try{
-            res.send({status: true, vote: votes});
-        }catch (e) {
-            res.send({status: false,msg: 'Co loi xay ra: ' +e.message})
-        }
-    }else {
-        res.send({status: false, msg:"Trung"});
-        // tslint:disable-next-line:no-console
-        console.log('Trung')
-    }
+    VoteData.findOneAndUpdate({tenMonAn: req.params.tenMonAn, tenCuaHang: req.params.tenCuaHang},
+        {$set: {like: req.body.like, dislike: req.body.dislike}},
+        (err, result) => {
+            if (err) return res.status(500).json({msg: err});
+            const msg = {
+                msg: "Successfully",
+                tenMonAn: req.params.tenMonAn,
+                tenCuaHang: req.params.tenCuaHang
+            };
+            return res.json(msg);
+        })
 })
 
 app.post('/signupuser', async (req: Request, res: Response)=>{

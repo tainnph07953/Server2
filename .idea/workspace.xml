@@ -21,32 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/changepassword.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/listVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listVoteController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600938202607-Nambdph07444-hqdefault.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600956754707-Nambdph07444-OIP.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600957151662-Nambdph07444-hqdefault.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600957204350-Nambdph07444-OIP.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603023443050-Nambdph07444-logo_pt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603870803873-Nambdph07444-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976144527-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976217613-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976239266-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976463536-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976621208-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604029552764-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604030110448-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604030213409-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604031112745-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604117262253-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604117293080-tainnph07953-tải xuống.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604313960486-Nambdph07444-image-46c59ec0-0e99-4e46-ab13-33ae84ef57dd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +220,8 @@
       <workItem from="1604828644147" duration="2852000" />
       <workItem from="1604831665691" duration="249000" />
       <workItem from="1604832144675" duration="346000" />
-      <workItem from="1604837276593" duration="4062000" />
+      <workItem from="1604837276593" duration="4137000" />
+      <workItem from="1604863862838" duration="1830000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -252,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604461980918</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="/updateLike">
+      <created>1604842070858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604842070858</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +258,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit code server user and food" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit code server user and food" />
+    <MESSAGE value="/updateLike" />
+    <option name="LAST_COMMIT_MESSAGE" value="/updateLike" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -302,10 +288,10 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
-    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1604842038409">
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1604842068714">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1604842038409" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1604842068714" />
     <state width="1894" height="309" key="GridCell.Tab.-1.bottom" timestamp="1603899112505">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
@@ -414,10 +400,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604733931265">
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604842086152">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604733931265" />
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604842086152" />
     <state x="0" y="401" width="1857" height="290" key="dock-window-1" timestamp="1603899490420">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
