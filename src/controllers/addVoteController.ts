@@ -4,15 +4,15 @@ import VoteModel, {Vote} from '../models/Vote'
 let nameImage: string=''
 
 const storage = multer.diskStorage({
-    destination(req: Request, file, callback) {
+    destination(req: Request, files, callback) {
         callback(null, './src/public/uploads');
     },
-    filename(req: Request, file, callback) {
+    filename(req: Request, files, callback) {
         // Accept images only
-        if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
+        if (!files.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
             return callback(new Error('Sai dinh dang'), "");
         }
-        const newNameFile = `${Date.now()}-tainnph07953-${file.originalname}`
+        const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
         nameImage=newNameFile;
         callback(null, newNameFile);
     }
@@ -24,7 +24,7 @@ class AddVoteController {
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).single('Anh')
+        const upload = await multer({storage,limits:{fieldSize: 10*1024*1024}}).array('Anh',10)
         upload(request, response, (err) => {
             if (err) {
                 response.send(err)
@@ -37,7 +37,8 @@ class AddVoteController {
                 gioMoCua: request.body.gioMoCua,
                 gioDongCua: request.body.gioDongCua,
                 nameImage: 'uploads/'+nameImage,
-                like: request.body.like
+                like: request.body.like,
+                dislike: request.body.dislike
             })
             vote.save();
             nameImage=''

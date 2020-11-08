@@ -20,17 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/listUserInformationController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/userInformation/userInformationController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/userMobile/userInformation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/add_information.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/information.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/userInformation/add_userInformation.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/userInformation/list_information.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/changepassword.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/listVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listVoteController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600938202607-Nambdph07444-hqdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600956754707-Nambdph07444-OIP.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600957151662-Nambdph07444-hqdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1600957204350-Nambdph07444-OIP.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603023443050-Nambdph07444-logo_pt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603870803873-Nambdph07444-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976144527-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976217613-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976239266-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976463536-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1603976621208-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604029552764-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604030110448-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604030213409-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604031112745-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604117262253-tainnph07953-che-do-lam-dep-1595200073627.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604117293080-tainnph07953-tải xuống.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604313960486-Nambdph07444-image-46c59ec0-0e99-4e46-ab13-33ae84ef57dd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/products/add_product/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +69,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -216,6 +237,13 @@
       <workItem from="1604494445260" duration="888000" />
       <workItem from="1604540890691" duration="91000" />
       <workItem from="1604543491027" duration="548000" />
+      <workItem from="1604733277476" duration="5486000" />
+      <workItem from="1604756319129" duration="1209000" />
+      <workItem from="1604759178491" duration="1116000" />
+      <workItem from="1604828644147" duration="2852000" />
+      <workItem from="1604831665691" duration="249000" />
+      <workItem from="1604832144675" duration="346000" />
+      <workItem from="1604837276593" duration="4062000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -274,10 +302,10 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
-    <state x="555" y="0" key="CommitChangelistDialog2" timestamp="1604461978742">
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1604842038409">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="555" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1604461978742" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1604842038409" />
     <state width="1894" height="309" key="GridCell.Tab.-1.bottom" timestamp="1603899112505">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
@@ -386,10 +414,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604461987633">
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1604733931265">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604461987633" />
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604733931265" />
     <state x="0" y="401" width="1857" height="290" key="dock-window-1" timestamp="1603899490420">
       <screen x="0" y="23" width="1920" height="974" />
     </state>
@@ -407,9 +435,10 @@
     </state>
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768/1366.0.1280.994@0.0.1304.768" timestamp="1603871043356" />
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1604476592253" />
-    <state x="2461" y="23" key="search.everywhere.popup" timestamp="1602753877594">
-      <screen x="1920" y="23" width="1920" height="974" />
+    <state x="367" y="0" width="672" height="678" key="search.everywhere.popup" timestamp="1604830054883">
+      <screen x="0" y="0" width="1304" height="768" />
     </state>
+    <state x="367" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1604830054883" />
     <state x="2461" y="23" key="search.everywhere.popup/0.23.1920.1057/1920.23.1920.974@1920.23.1920.974" timestamp="1602753877594" />
   </component>
 </project>

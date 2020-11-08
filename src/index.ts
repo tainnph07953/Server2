@@ -23,10 +23,13 @@ import InformationRouter from "./routes/information";
 import {addVoteController} from "./controllers/addVoteController";
 import Admin,{usermobile} from "./models/userMobile/userMobile";
 import product,{Product} from "./models/Product";
+import VoteData,{Vote} from "./models/Vote";
 import multer from "multer";
 // Initializations
 const app = express();
-import ('./database')
+// import ('./database');
+// @ts-ignore
+import databases from './database';
 
 // Setting
 app.set('port', process.env.PORT || 5000);
@@ -98,6 +101,28 @@ app.post('/food', async (req: Request, res: Response)=>{
         console.log('Cửa hàng da ton tai')
     }
 });
+
+app.post('/updateLike', async (req: Request, res: Response)=>{
+    const vote = {
+        tenMonAn: req.body.tenMonAn,
+        tenCuaHang: req.body.tenCuaHang,
+        like: req.body.like,
+        dislike: req.body.dislike
+    };
+    const votedata = await VoteData.find({tenMonAn: req.body.tenMonAn, tenCuaHang: req.body.tenCuaHang});
+    if (votedata.length === 0){
+        const votes = await VoteData.update(vote,databases)
+        try{
+            res.send({status: true, vote: votes});
+        }catch (e) {
+            res.send({status: false,msg: 'Co loi xay ra: ' +e.message})
+        }
+    }else {
+        res.send({status: false, msg:"Trung"});
+        // tslint:disable-next-line:no-console
+        console.log('Trung')
+    }
+})
 
 app.post('/signupuser', async (req: Request, res: Response)=>{
     const user = {
