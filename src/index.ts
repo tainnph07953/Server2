@@ -23,10 +23,13 @@ import InformationRouter from "./routes/information";
 import {addVoteController} from "./controllers/addVoteController";
 import Admin,{usermobile} from "./models/userMobile/userMobile";
 import product,{Product} from "./models/Product";
+import VoteData,{Vote} from "./models/Vote";
 import multer from "multer";
 // Initializations
 const app = express();
-import ('./database')
+// import ('./database');
+// @ts-ignore
+import databases from './database';
 
 // Setting
 app.set('port', process.env.PORT || 5000);
@@ -98,6 +101,20 @@ app.post('/food', async (req: Request, res: Response)=>{
         console.log('Cửa hàng da ton tai')
     }
 });
+
+app.post('/updateLike', async (req: Request, res: Response)=>{
+    VoteData.findOneAndUpdate({tenMonAn: req.params.tenMonAn, tenCuaHang: req.params.tenCuaHang},
+        {$set: {like: req.body.like, dislike: req.body.dislike}},
+        (err, result) => {
+            if (err) return res.status(500).json({msg: err});
+            const msg = {
+                msg: "Successfully",
+                tenMonAn: req.params.tenMonAn,
+                tenCuaHang: req.params.tenCuaHang
+            };
+            return res.json(msg);
+        })
+})
 
 app.post('/signupuser', async (req: Request, res: Response)=>{
     const user = {

@@ -8,7 +8,8 @@ export interface Vote extends mongoose.Document{
     gioMoCua: string,
     gioDongCua: string,
     nameImage: string,
-    like: string
+    like: number,
+    dislike: number
 }
 
 const VoteSchema = new Schema(
@@ -19,7 +20,8 @@ const VoteSchema = new Schema(
         gioMoCua: String,
         gioDongCua: String,
         nameImage: String,
-        like: String
+        like: Number,
+        dislike: Number,
     }
 );
 
