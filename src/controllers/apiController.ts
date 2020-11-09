@@ -10,10 +10,11 @@ import mongoose from "mongoose";
 
 
 class ApiController {
-    public async  getAllInformation(request: Request, response: Response): Promise<void> {
+    public async getAllInformation(request: Request, response: Response): Promise<void> {
         const listInformation = await UserInformationModel.find().lean()
         response.send(listInformation)
     }
+
     public async getAllVote(request: Request, response: Response): Promise<void> {
         const listVote = await VoteModel.find().lean()
         response.send(listVote)
@@ -41,9 +42,31 @@ class ApiController {
         }
     }
 
+    public async updateLike(request: Request, response: Response): Promise<void> {
+        const index = request.body.index;
+        const newAmount = request.body.newAmount;
+        const vote = await VoteModel.find().lean()
+        let idVote = '';
+        vote.forEach((item) => {
+            if (item.like.toString() === request.body.like || item.dislike.toString() === request.body.dislike) {
+                idVote = item._id.toString()
+            }
+        })
+        const order = await OrderModel.findById(idVote)
+        if (order != null) {
+            order.listProduct[Number(index)].amount = newAmount;
+            await OrderModel.findByIdAndUpdate(idVote, {listProduct: order.listProduct}, err => {
+                if (err) {
+                    response.sendStatus(400)
+                } else {
+                    response.sendStatus(200)
+                }
+                ;
+            })
+        }
+}
     public async updateOder(request: Request, response: Response): Promise<void> {
         const [order] = await Promise.all([OrderModel.findOne({idCustomer: request.body.idCustomer}).lean()])
-
         if (order != null) {
             await OrderModel.findByIdAndUpdate(order._id, {isSend: true}, err => {
                 if (err) {

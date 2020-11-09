@@ -1,7 +1,11 @@
 import {Request, Response} from 'express'
 import multer from "multer";
 import VoteModel, {Vote} from '../models/Vote'
-let nameImage: string=''
+import OrderModel from "../models/Order";
+import ProductModel from "../models/Product";
+import os from "os";
+
+let nameImage: string = ''
 
 const storage = multer.diskStorage({
     destination(req: Request, files, callback) {
@@ -13,7 +17,7 @@ const storage = multer.diskStorage({
             return callback(new Error('Sai dinh dang'), "");
         }
         const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
-        nameImage=newNameFile;
+        nameImage = newNameFile;
         callback(null, newNameFile);
     }
 });
@@ -24,7 +28,7 @@ class AddVoteController {
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage,limits:{fieldSize: 10*1024*1024}}).array('Anh',10)
+        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).array('Anh', 10)
         upload(request, response, (err) => {
             if (err) {
                 response.send(err)
@@ -36,12 +40,12 @@ class AddVoteController {
                 diaChi: request.body.diaChi,
                 gioMoCua: request.body.gioMoCua,
                 gioDongCua: request.body.gioDongCua,
-                nameImage: 'uploads/'+nameImage,
+                nameImage: 'uploads/' + nameImage,
                 like: request.body.like,
                 dislike: request.body.dislike
             })
             vote.save();
-            nameImage=''
+            nameImage = ''
             response.redirect('vote')
         })
     }
