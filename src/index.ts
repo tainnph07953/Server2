@@ -29,10 +29,10 @@ import multer from "multer";
 const app = express();
 import ('./database');
 // @ts-ignore
-// import databases from './database';
+import databases from './database';
 
 // Setting
-app.set('port', process.env.PORT || 5000);
+app.set('port', process.env.PORT || 8100);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', hbs({
     extname: '.hbs',
