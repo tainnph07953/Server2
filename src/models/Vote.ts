@@ -1,10 +1,13 @@
-import mongoose,{Schema,model} from 'mongoose'
+import mongoose, {Schema, model} from 'mongoose'
 
 
-export interface Vote extends mongoose.Document{
-    tenMonAn:string,
+export interface Vote extends mongoose.Document {
+    tenMonAn: string,
     tenCuaHang: string,
-    diaChi: string,
+    xaPhuong: string,
+    quanHuyen: string,
+    thanhPho: string,
+    tenDuong: string,
     gioMoCua: string,
     gioDongCua: string,
     nameImage: string,
@@ -16,7 +19,10 @@ const VoteSchema = new Schema(
     {
         tenMonAn: String,
         tenCuaHang: String,
-        diaChi: String,
+        xaPhuong: String,
+        quanHuyen: String,
+        thanhPho: String,
+        tenDuong: String,
         gioMoCua: String,
         gioDongCua: String,
         nameImage: String,
@@ -25,4 +31,4 @@ const VoteSchema = new Schema(
     }
 );
 
-export default model<Vote>('Vote', VoteSchema,"votes")
+export default model<Vote>('Vote', VoteSchema, "votes")

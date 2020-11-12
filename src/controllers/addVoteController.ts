@@ -28,7 +28,7 @@ class AddVoteController {
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).array('Anh', 10)
+        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).array('Image', 10)
         upload(request, response, (err) => {
             if (err) {
                 response.send(err)
@@ -37,7 +37,10 @@ class AddVoteController {
             const vote: Vote = new VoteModel({
                 tenMonAn: request.body.tenMonAn,
                 tenCuaHang: request.body.tenCuaHang,
-                diaChi: request.body.diaChi,
+                xaPhuong: request.body.xaPhuong,
+                quanHuyen: request.body.quanHuyen,
+                thanhPho: request.body.thanhPho,
+                tenDuong: request.body.tenDuong,
                 gioMoCua: request.body.gioMoCua,
                 gioDongCua: request.body.gioDongCua,
                 nameImage: 'uploads/' + nameImage,
