@@ -20,10 +20,10 @@ class LoginController {
         const roleReq = request.body.role
         const [users] = await Promise.all([UserModel.findOne({userName: userNameReq, password: passwordReq},)]);
         if (users!=null) {
-            response.redirect('/product')
+            response.redirect('/vote')
         } else {
             response.render("login.hbs", {
-                status: "Thất bại!", content_status: "Tài khoản hoặc mật khẩu không chính xác",
+                status: "Thất bại!", content_status: "Tài khoản hoặc mật khẩu không chính xác.Vui lòng thử lại !",
                 isShowNotification: null,
                 title: 'Đăng nhập',
                 setShowNav: 'sb-nav-fixed sb-sidenav-toggled',
