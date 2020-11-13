@@ -64,7 +64,7 @@
         "country": [
             {
                 "id": 1,
-                "name": "Hà Nội",
+                "name": "Thành phố Hà Nội",
                 "location": "21.0277644-105.8341598",
                 "type": "Thành phố Trung ương",
                 "huyen": [
@@ -4427,44 +4427,1139 @@
                         ]
                     }
                 ]
-            }
-        ]
-    }
- // const myJson = require('src/views/Json/data.json');
-    $.each(myJson.country, function (index, value) {
-        $('#thanhPho').html('<option style="font-weight:bold" value="000">Chọn thành phố</option>');
-        $("#thanhPho").append('<option value="'+value.id+'">'+value.name+'</option>');
-    });
-
-    $('#thanhPho').on('change', function(){
-        console.log($(this).val());
-        for(var i = 0; i < myJson.country.length; i++)
-        {
-            if(myJson.country[i].id == $(this).val())
+            },
             {
-                $('#quanHuyen').html('<option style="font-weight:bold" value="000">Chọn quận huyện</option>');
-                $.each(myJson.country[i].huyen, function (index, value) {
-                    $("#quanHuyen").append('<option value="'+value.id+'">'+value.name+'</option>');
-                });
-            }
-        }
-    });
+                "id": 37,
+                "name": "Tỉnh Ninh Bình",
+                "location": "20.2129969-105.92299",
+                "type": "Tỉnh",
+                "huyen": [
+                    {
+                        "id": 369,
+                        "name": "Thành phố Ninh Bình",
+                        "location": "20.2506149-105.9744536",
+                        "type": "Thành phố",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14320,
+                                "name": "Phường Đông Thành",
+                                "location": "20.2639567-105.9753452",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14323,
+                                "name": "Phường Tân Thành",
+                                "location": "20.2598603-105.9631818",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14326,
+                                "name": "Phường Thanh Bình",
+                                "location": "20.2538422-105.982906",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14329,
+                                "name": "Phường Vân Giang",
+                                "location": "20.2551852-105.9751288",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14332,
+                                "name": "Phường Bích Đào",
+                                "location": "20.2492027-105.9899826",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14335,
+                                "name": "Phường Phúc Thành",
+                                "location": "20.252878-105.9654682",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14338,
+                                "name": "Phường Nam Bình",
+                                "location": "20.242985-105.9791364",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14341,
+                                "name": "Phường Nam Thành",
+                                "location": "20.241771-105.966288",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14344,
+                                "name": "Phường Ninh Khánh",
+                                "location": "20.2733332-105.9643869",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14347,
+                                "name": "Xã Ninh Nhất",
+                                "location": "20.2701273-105.9477157",
+                                "type": "Xã",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14350,
+                                "name": "Xã Ninh Tiến",
+                                "location": "20.2393666-105.9524284",
+                                "type": "Xã",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14353,
+                                "name": "Xã Ninh Phúc",
+                                "location": "20.237403-106.0046168",
+                                "type": "Xã",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14356,
+                                "name": "Phường Ninh Sơn",
+                                "location": "20.2285701-105.9890839",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            },
+                            {
+                                "id": 14359,
+                                "name": "Phường Ninh Phong",
+                                "location": "20.2180895-105.9642878",
+                                "type": "Phường",
+                                "huyen_id": 369
+                            }
+                        ]
+                    },
+                    {
+                        "id": 370,
+                        "name": "Thành phố Tam Điệp",
+                        "location": "20.1564917-105.8736936",
+                        "type": "Thành phố",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14362,
+                                "name": "Phường Bắc Sơn",
+                                "location": "20.1588273-105.9141793",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14365,
+                                "name": "Phường Trung Sơn",
+                                "location": "20.1519559-105.9259271",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14368,
+                                "name": "Phường Nam Sơn",
+                                "location": "20.1288888-105.8936224",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14369,
+                                "name": "Phường Tây Sơn",
+                                "location": "20.1546637-105.896559",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14371,
+                                "name": "Xã Yên Sơn",
+                                "location": "20.1983456-105.8936224",
+                                "type": "Xã",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14374,
+                                "name": "Phường Yên Bình",
+                                "location": "20.1983456-105.8936224",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14375,
+                                "name": "Phường Tân Bình",
+                                "location": "20.1633535-105.930326",
+                                "type": "Phường",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14377,
+                                "name": "Xã Quang Sơn",
+                                "location": "20.1605304-105.8642593",
+                                "type": "Xã",
+                                "huyen_id": 370
+                            },
+                            {
+                                "id": 14380,
+                                "name": "Xã Đông Sơn",
+                                "location": "20.1256429-105.9288641",
+                                "type": "Xã",
+                                "huyen_id": 370
+                            }
+                        ]
+                    },
+                    {
+                        "id": 372,
+                        "name": "Huyện Nho Quan",
+                        "location": "20.2976274-105.7585908",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14383,
+                                "name": "Thị trấn Nho Quan",
+                                "location": "20.3192475-105.7439194",
+                                "type": "Thị trấn",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14386,
+                                "name": "Xã Xích Thổ",
+                                "location": "20.4281462-105.7879371",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14389,
+                                "name": "Xã Gia Lâm",
+                                "location": "20.3860576-105.7732633",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14392,
+                                "name": "Xã Gia Sơn",
+                                "location": "20.3965591-105.7850022",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14395,
+                                "name": "Xã Thạch Bình",
+                                "location": "20.3767065-105.7175138",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14398,
+                                "name": "Xã Gia Thủy",
+                                "location": "20.3775564-105.802612",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14401,
+                                "name": "Xã Gia Tường",
+                                "location": "20.3597215-105.776198",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14404,
+                                "name": "Xã Cúc Phương",
+                                "location": "20.2601752-105.7359146",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14407,
+                                "name": "Xã Phú Sơn",
+                                "location": "20.3516326-105.7374985",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14410,
+                                "name": "Xã Đức Long",
+                                "location": "20.3343898-105.7996769",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14413,
+                                "name": "Xã Lạc Vân",
+                                "location": "20.3344672-105.7673942",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14416,
+                                "name": "Xã Đồng Phong",
+                                "location": "20.3208627-105.7263152",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14419,
+                                "name": "Xã Yên Quang",
+                                "location": "20.3077827-105.7166537",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14422,
+                                "name": "Xã Lạng Phong",
+                                "location": "20.3112988-105.7673942",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14425,
+                                "name": "Xã Thượng Hòa",
+                                "location": "20.300722-105.7879371",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14428,
+                                "name": "Xã Văn Phong",
+                                "location": "20.30187-105.7439194",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14431,
+                                "name": "Xã Văn Phương",
+                                "location": "20.2702968-105.743887",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14434,
+                                "name": "Xã Thanh Lạc",
+                                "location": "20.2801823-105.790872",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14437,
+                                "name": "Xã Sơn Lai",
+                                "location": "20.2605704-105.8466437",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14440,
+                                "name": "Xã Sơn Thành",
+                                "location": "20.2727713-105.8084823",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14443,
+                                "name": "Xã Văn Phú",
+                                "location": "20.2681293-105.7644596",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14446,
+                                "name": "Xã Phú Lộc",
+                                "location": "20.2454356-105.790872",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14449,
+                                "name": "Xã Kỳ Phú",
+                                "location": "20.2176168-105.7468535",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14452,
+                                "name": "Xã Quỳnh Lưu",
+                                "location": "20.2395731-105.8231588",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14455,
+                                "name": "Xã Sơn Hà",
+                                "location": "20.2120893-105.8701316",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14458,
+                                "name": "Xã Phú Long",
+                                "location": "20.190155-105.7938069",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            },
+                            {
+                                "id": 14461,
+                                "name": "Xã Quảng Lạc",
+                                "location": "20.2026738-105.8466437",
+                                "type": "Xã",
+                                "huyen_id": 372
+                            }
+                        ]
+                    },
+                    {
+                        "id": 373,
+                        "name": "Huyện Gia Viễn",
+                        "location": "20.3353002-105.8525154",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14464,
+                                "name": "Thị trấn Me",
+                                "location": "20.3511349-105.8378366",
+                                "type": "Thị trấn",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14467,
+                                "name": "Xã Gia Hòa",
+                                "location": "20.3863283-105.8585375",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14470,
+                                "name": "Xã Gia Hưng",
+                                "location": "20.3908478-105.817811",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14473,
+                                "name": "Xã Liên Sơn",
+                                "location": "20.369051-105.8319653",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14476,
+                                "name": "Xã Gia Thanh",
+                                "location": "20.3607465-105.918653",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14479,
+                                "name": "Xã Gia Vân",
+                                "location": "20.3581631-105.8795001",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14482,
+                                "name": "Xã Gia Phú",
+                                "location": "20.3533055-105.8143528",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14485,
+                                "name": "Xã Gia Xuân",
+                                "location": "20.3450469-105.8771969",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14488,
+                                "name": "Xã Gia Lập",
+                                "location": "20.3400236-105.9001379",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14491,
+                                "name": "Xã Gia Vượng",
+                                "location": "20.3423132-105.8446026",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14494,
+                                "name": "Xã Gia Trấn",
+                                "location": "20.3418709-105.9376756",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14497,
+                                "name": "Xã Gia Thịnh",
+                                "location": "20.3353896-105.8202234",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14500,
+                                "name": "Xã Gia Phương",
+                                "location": "20.3305784-105.8645025",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14503,
+                                "name": "Xã Gia Tân",
+                                "location": "20.3272343-105.9083056",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14506,
+                                "name": "Xã Gia Thắng",
+                                "location": "20.3183787-105.8789403",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14509,
+                                "name": "Xã Gia Trung",
+                                "location": "20.3015333-105.848102",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14512,
+                                "name": "Xã Gia Minh",
+                                "location": "20.3069761-105.8143528",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14515,
+                                "name": "Xã Gia Lạc",
+                                "location": "20.3111421-105.8319653",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14518,
+                                "name": "Xã Gia Tiến",
+                                "location": "20.300466-105.884813",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14521,
+                                "name": "Xã Gia Sinh",
+                                "location": "20.2841056-105.8660365",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            },
+                            {
+                                "id": 14524,
+                                "name": "Xã Gia Phong",
+                                "location": "20.2899738-105.8324575",
+                                "type": "Xã",
+                                "huyen_id": 373
+                            }
+                        ]
+                    },
+                    {
+                        "id": 374,
+                        "name": "Huyện Hoa Lư",
+                        "location": "20.248813-105.9112424",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14527,
+                                "name": "Thị trấn Thiên Tôn",
+                                "location": "20.2989486-105.9479561",
+                                "type": "Thị trấn",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14530,
+                                "name": "Xã Ninh Giang",
+                                "location": "20.3129281-105.9376756",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14533,
+                                "name": "Xã Trường Yên",
+                                "location": "20.2783001-105.9053689",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14536,
+                                "name": "Xã Ninh Khang",
+                                "location": "20.3032695-105.9658601",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14539,
+                                "name": "Xã Ninh Mỹ",
+                                "location": "20.288683-105.9494248",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14542,
+                                "name": "Xã Ninh Hòa",
+                                "location": "20.285077-105.9259271",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14545,
+                                "name": "Xã Ninh Xuân",
+                                "location": "20.2445591-105.9259271",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14548,
+                                "name": "Xã Ninh Hải",
+                                "location": "20.2204143-105.9053689",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14551,
+                                "name": "Xã Ninh Thắng",
+                                "location": "20.2192307-105.9494248",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14554,
+                                "name": "Xã Ninh Vân",
+                                "location": "20.1913817-105.9376756",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            },
+                            {
+                                "id": 14557,
+                                "name": "Xã Ninh An",
+                                "location": "20.2023114-105.9758633",
+                                "type": "Xã",
+                                "huyen_id": 374
+                            }
+                        ]
+                    },
+                    {
+                        "id": 375,
+                        "name": "Huyện Yên Khánh",
+                        "location": "20.187228-106.0757749",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14560,
+                                "name": "Thị trấn Yên Ninh",
+                                "location": "20.1788256-106.0728356",
+                                "type": "Thị trấn",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14563,
+                                "name": "Xã Khánh Tiên",
+                                "location": "20.2350222-106.0904721",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14566,
+                                "name": "Xã Khánh Phú",
+                                "location": "20.2335787-106.0208313",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14569,
+                                "name": "Xã Khánh Hòa",
+                                "location": "20.2228804-106.0076666",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14572,
+                                "name": "Xã Khánh Lợi",
+                                "location": "20.2066498-106.0845931",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14575,
+                                "name": "Xã Khánh An",
+                                "location": "20.212681-106.0199355",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14578,
+                                "name": "Xã Khánh Cường",
+                                "location": "20.2103651-106.1256924",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14581,
+                                "name": "Xã Khánh Cư",
+                                "location": "20.2052533-106.0375673",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14584,
+                                "name": "Xã Khánh Thiện",
+                                "location": "20.2124098-106.1105764",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14587,
+                                "name": "Xã Khánh Hải",
+                                "location": "20.2025125-106.0669571",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14590,
+                                "name": "Xã Khánh Trung",
+                                "location": "20.1985284-106.140451",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14593,
+                                "name": "Xã Khánh Mậu",
+                                "location": "20.1928824-106.1081103",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14596,
+                                "name": "Xã Khánh Vân",
+                                "location": "20.18735-106.0434449",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14599,
+                                "name": "Xã Khánh Hội",
+                                "location": "20.1766303-106.0963513",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14602,
+                                "name": "Xã Khánh Công",
+                                "location": "20.1742939-106.1522126",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14608,
+                                "name": "Xã Khánh Thành",
+                                "location": "20.1543303-106.1492721",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14611,
+                                "name": "Xã Khánh Nhạc",
+                                "location": "20.1566614-106.0934117",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14614,
+                                "name": "Xã Khánh Thủy",
+                                "location": "20.1565318-106.12575",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            },
+                            {
+                                "id": 14617,
+                                "name": "Xã Khánh Hồng",
+                                "location": "20.147286-106.0698963",
+                                "type": "Xã",
+                                "huyen_id": 375
+                            }
+                        ]
+                    },
+                    {
+                        "id": 376,
+                        "name": "Huyện Kim Sơn",
+                        "location": "20.0462334-106.099291",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14620,
+                                "name": "Thị trấn Phát Diệm",
+                                "location": "20.0922814-106.0860628",
+                                "type": "Thị trấn",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14623,
+                                "name": "Thị trấn Bình Minh",
+                                "location": "19.9769487-106.0669571",
+                                "type": "Thị trấn",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14626,
+                                "name": "Xã Xuân Thiện",
+                                "location": "20.1385661-106.1478019",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14629,
+                                "name": "Xã Hồi Ninh",
+                                "location": "20.1202514-106.1272201",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14632,
+                                "name": "Xã Chính Tâm",
+                                "location": "20.1301676-106.1448615",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14635,
+                                "name": "Xã Kim Định",
+                                "location": "20.1147432-106.12428",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14638,
+                                "name": "Xã Ân Hòa",
+                                "location": "20.1063436-106.1213399",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14641,
+                                "name": "Xã Hùng Tiến",
+                                "location": "20.1100577-106.1125201",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14644,
+                                "name": "Xã Yên Mật",
+                                "location": "20.1306955-106.0772446",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14647,
+                                "name": "Xã Quang Thiện",
+                                "location": "20.0945659-106.1081103",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14650,
+                                "name": "Xã Như Hòa",
+                                "location": "20.1013834-106.1125201",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14653,
+                                "name": "Xã Chất Bình",
+                                "location": "20.1207356-106.1375107",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14656,
+                                "name": "Xã Đồng Hướng",
+                                "location": "20.0909133-106.1007608",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14659,
+                                "name": "Xã Kim Chính",
+                                "location": "20.0888427-106.0919419",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14662,
+                                "name": "Xã Thượng Kiệm",
+                                "location": "20.061999-106.1007608",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14665,
+                                "name": "Xã Lưu Phương",
+                                "location": "20.0749317-106.0860628",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14668,
+                                "name": "Xã Tân Thành",
+                                "location": "20.1105098-106.0610787",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14671,
+                                "name": "Xã Yên Lộc",
+                                "location": "20.093158-106.0610787",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14674,
+                                "name": "Xã Lai Thành",
+                                "location": "20.0768975-106.0493226",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14677,
+                                "name": "Xã Định Hóa",
+                                "location": "20.0536547-106.0816536",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14680,
+                                "name": "Xã Văn Hải",
+                                "location": "20.0336872-106.0787142",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14683,
+                                "name": "Xã Kim Tân",
+                                "location": "20.0178669-106.0934117",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14686,
+                                "name": "Xã Kim Mỹ",
+                                "location": "20.0058623-106.0669571",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14689,
+                                "name": "Xã Cồn Thoi",
+                                "location": "19.9947376-106.0934117",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14692,
+                                "name": "Xã Kim Hải",
+                                "location": "19.9770437-106.0346285",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14695,
+                                "name": "Xã Kim Trung",
+                                "location": "19.9617724-106.0434449",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            },
+                            {
+                                "id": 14698,
+                                "name": "Xã Kim Đông",
+                                "location": "19.9327668-106.0757749",
+                                "type": "Xã",
+                                "huyen_id": 376
+                            }
+                        ]
+                    },
+                    {
+                        "id": 377,
+                        "name": "Huyện Yên Mô",
+                        "location": "20.1370289-105.993491",
+                        "type": "Huyện",
+                        "tinh_id": 37,
+                        "xa": [
+                            {
+                                "id": 14701,
+                                "name": "Thị trấn Yên Thịnh",
+                                "location": "20.1601193-106.0096511",
+                                "type": "Thị trấn",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14704,
+                                "name": "Xã Khánh Thượng",
+                                "location": "20.1791651-105.9758633",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14707,
+                                "name": "Xã Khánh Dương",
+                                "location": "20.1848449-106.0081819",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14710,
+                                "name": "Xã Mai Sơn",
+                                "location": "20.1838222-105.960574",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14713,
+                                "name": "Xã Khánh Thịnh",
+                                "location": "20.1721814-106.0199355",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14719,
+                                "name": "Xã Yên Phong",
+                                "location": "20.1621376-106.0346285",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14722,
+                                "name": "Xã Yên Hòa",
+                                "location": "20.1549309-105.9876149",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14725,
+                                "name": "Xã Yên Thắng",
+                                "location": "20.146621-105.9523622",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14728,
+                                "name": "Xã Yên Từ",
+                                "location": "20.1410708-106.0434449",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14731,
+                                "name": "Xã Yên Hưng",
+                                "location": "20.1448904-106.0023054",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14734,
+                                "name": "Xã Yên Thành",
+                                "location": "20.1202159-105.9876149",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14737,
+                                "name": "Xã Yên Nhân",
+                                "location": "20.1179325-106.0434449",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14740,
+                                "name": "Xã Yên Mỹ",
+                                "location": "20.1264444-106.0140586",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14743,
+                                "name": "Xã Yên Mạc",
+                                "location": "20.0930512-106.0142887",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14746,
+                                "name": "Xã Yên Đồng",
+                                "location": "20.099245-105.9641124",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14749,
+                                "name": "Xã Yên Thái",
+                                "location": "20.0844164-105.9993672",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            },
+                            {
+                                "id": 14752,
+                                "name": "Xã Yên Lâm",
+                                "location": "20.0775524-106.022705",
+                                "type": "Xã",
+                                "huyen_id": 377
+                            }
+                        ]
+                    }
+                ]
+            },
+        ]
+    };
+    $.each(myJson.country, function (index, value) {
+        var country_id;
+        var state_id;
 
-    $('#quanHuyen').on('change', function(){
-        console.log($(this).val());
-        for(var i = 0; i < myJson.country.length; i++)
-        {
-            for(var j = 0; j < myJson.country[i].huyen.length; j++) {
+        $("#thanhPho").append('<option rel="' + index + '" value="' + value.id + '">' + value.name + '</option>');
 
-                if(myJson.country[i].huyen[j].id == $(this).val())
+        $("#thanhPho").change(function () {
+            $("#quanHuyen, #xaPhuong").find("option:gt(0)").remove();
+            $("#quanHuyen").find("option:first").text("Loading...");
 
-                {
-                    $('#xaPhuong').html('<option style="font-weight:bold" value="000">Chọn xã phường</option>');
-                    $.each(myJson.country[i].huyen[j].xa, function (index, value) {
-                        $("#xaPhuong").append('<option value="'+value.id+'">'+value.name+'</option>');
-                    });
-                }
-            }
-        }
+            country_id = $(this).find('option:selected').attr('rel');
+            console.log("Country INDEX : " + country_id);
+
+            $.each(myJson.country[country_id].huyen, function (index1, value1) {
+                $("#quanHuyen").find("option:first").text("Chọn");
+                $("#quanHuyen").append('<option rel="' + index1 + '" value="' + value1.id + '">' + value1.name + '</option>');
+            });
+
+        });
+
+
+        $("#quanHuyen").change(function () {
+            $("#xaPhuong").find("option:gt(0)").remove();
+            $("#xaPhuong").find("option:first").text("Loading...");
+
+            state_id = $(this).find('option:selected').attr('rel');
+            console.log("State INDEX : " + state_id);
+
+            $.each(myJson.country[country_id].huyen[state_id].xa, function (index2, value2) {
+                $("#xaPhuong").find("option:first").text("Chọn");
+                $("#xaPhuong").append('<option rel="' + index2 + '" value="' + value2.id + '">' + value2.name + '</option>');
+            });
+
+
+        });
+
     });
 </script>
