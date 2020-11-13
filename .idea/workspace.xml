@@ -19,23 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="updateLike">
-      <change afterPath="$PROJECT_DIR$/src/views/Json/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="Cập nhật chọn xã phường quận huyên">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/loginController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/loginController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/add_vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/add_vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layouts/main.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/login/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/products/list_product.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/products/list_product.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/add_vote.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +238,7 @@
       <workItem from="1605147949842" duration="767000" />
       <workItem from="1605150821524" duration="10173000" />
       <workItem from="1605164939656" duration="8030000" />
-      <workItem from="1605193446664" duration="5440000" />
+      <workItem from="1605193446664" duration="7420000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -281,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604981817550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cập nhật chọn xã phường quận huyên">
+      <created>1605199228189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605199228189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +297,8 @@
     <MESSAGE value="Commit code server user and food" />
     <MESSAGE value="/updateLike" />
     <MESSAGE value="updateLike" />
-    <option name="LAST_COMMIT_MESSAGE" value="updateLike" />
+    <MESSAGE value="Cập nhật chọn xã phường quận huyên" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cập nhật chọn xã phường quận huyên" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -454,11 +449,11 @@
     </state>
     <state x="555" y="125" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1605068256424" />
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="300" y="115" key="Vcs.Push.Dialog.v2" timestamp="1604981836022">
+    <state x="300" y="115" key="Vcs.Push.Dialog.v2" timestamp="1605199258658">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1604842086152" />
-    <state x="300" y="115" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1604981836022" />
+    <state x="300" y="115" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1605199258658" />
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604890303665">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
