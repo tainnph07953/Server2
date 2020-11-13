@@ -32,7 +32,7 @@ import ('./database');
 import databases from './database';
 
 // Setting
-app.set('port', process.env.PORT || 8100);
+app.set('port', process.env.PORT || 8000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', hbs({
     extname: '.hbs',

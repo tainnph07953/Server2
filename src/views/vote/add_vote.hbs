@@ -13,7 +13,7 @@
         <div class="form-group">
             <div class="row">
                 <div class="col">
-                    <label for="exampleInputPassword1">Tỉnh thành</label>
+                    <label for="exampleInputPassword1">Tỉnh thành </label>
                     <select name="thanhPho" type="text" class="form-control" id="thanhPho">
                         <option value="000">--Chọn thành phố--</option>
                     </select>
@@ -64,7 +64,7 @@
         "country": [
             {
                 "id": 1,
-                "name": "Thành phố Hà Nội",
+                "name": "Hà Nội",
                 "location": "21.0277644-105.8341598",
                 "type": "Thành phố Trung ương",
                 "huyen": [
@@ -4431,7 +4431,6 @@
         ]
     }
  // const myJson = require('src/views/Json/data.json');
-
     $.each(myJson.country, function (index, value) {
         $('#thanhPho').html('<option style="font-weight:bold" value="000">Chọn thành phố</option>');
         $("#thanhPho").append('<option value="'+value.id+'">'+value.name+'</option>');
