@@ -4,20 +4,19 @@ import ProductModel, {Product} from '../models/Product'
 let nameImage: string=''
 
 const storage = multer.diskStorage({
-    destination(req: Request, file, callback) {
+    destination(req: Request, files, callback) {
         callback(null, './src/public/uploads');
     },
-    filename(req: Request, file, callback) {
+    filename(req: Request, files, callback) {
         // Accept images only
-        if (!file.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
+        if (!files.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
             return callback(new Error('Sai dinh dang'), "");
         }
-        const newNameFile = `${Date.now()}-tainnph07953-${file.originalname}`
+        const newNameFile = `${files.originalname + ';' + files.originalname}`
         nameImage=newNameFile;
         callback(null, newNameFile);
     }
 });
-
 class AddProductController {
     public index(request: Request, response: Response) {
         response.render('products/add_product/add.hbs', {title: 'Thêm món ăn'})
@@ -37,7 +36,7 @@ class AddProductController {
                 brand: request.body.brand,
                 size: request.body.size,
                 tukhoa: request.body.tukhoa,
-                urlImage: 'uploads/'+nameImage
+                urlImage: nameImage
             })
             product.save();
             nameImage=''

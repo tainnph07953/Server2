@@ -7,6 +7,8 @@ import OrderModel, {Order} from "../models/Order";
 import VoteModel, {Vote} from "../models/Vote";
 import UserInformationModel,{userInformation} from "../models/userMobile/userInformation";
 import mongoose from "mongoose";
+import Admin from "../models/userMobile/userMobile";
+import userMobileModel,{usermobile} from "../models/userMobile/userMobile";
 
 
 class ApiController {
@@ -118,7 +120,51 @@ class ApiController {
         }
 
     }
-
+    public async updateVote(req: Request, res: Response): Promise<void> {
+        const like = req.body.like;
+        const dislike = req.body.dislike;
+        const votes = await VoteModel.find().lean()
+        let idVote = '';
+        votes.forEach((item) => {
+            if (item._id.toString() === req.body._id) {
+                idVote = item._id.toString()
+            }
+        })
+        const vote = await VoteModel.findById(idVote)
+        if (vote != null) {
+            // @ts-ignore
+            vote.listVote[Number(like)].like = dislike;
+            // @ts-ignore
+            await VoteModel.findByIdAndUpdate(idVote, {listVote: vote.listVote}, err => {
+                if (err) {
+                    res.sendStatus(400)
+                } else {
+                    res.sendStatus(200)
+                }
+                ;
+            })
+        }
+    }
+    // public async signupuser(req: Request, res: Response): Promise<void>{
+    //     const user = {
+    //         userName: req.body.userName,
+    //         password: req.body.password
+    //     };
+    //     // console.log(user);
+    //     const userdata = await Admin.find({userName: req.body.userName});
+    //     if (userdata.length === 0) {
+    //         const users = await Admin.create(user)
+    //         try {
+    //             res.send({status: true, user: users});
+    //         } catch (e) {
+    //             res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
+    //         }
+    //     } else {
+    //         res.send({status: false, msg: "user đã tồn tại"});
+    //         // tslint:disable-next-line:no-console
+    //         console.log('User da ton tai')
+    //     }
+    // }
     public async deleteOrderDetail(request: Request, response: Response): Promise<void> {
         const index = request.body.index;
         const orders = await OrderModel.find().lean()
@@ -141,6 +187,47 @@ class ApiController {
             })
         }
 
+    }
+    public async signupuser(request: Request, response: Response): Promise<void> {
+        const usermobiles : usermobile = new userMobileModel({
+            userName: request.body.userName,
+            password: request.body.password,
+        })
+        const user: usermobile[] = await userMobileModel.find().lean()
+        for (const item of user) {
+            if (item.userName === request.body.userName) {
+                response.sendStatus(409)// da ton tai
+                return;
+            }
+        }
+        await usermobiles.save((err => {
+            if (err) {
+                response.sendStatus(400) // loi sever
+                return;
+            } else {
+                response.sendStatus(200); // ok
+            }
+        }));
+    }
+    public async signinuser(req: Request, res: Response): Promise<void>{
+        const user = {
+            userName: req.body.userName,
+            password: req.body.password
+        };
+
+        const userdata = await Admin.find({userName: req.body.userName, password: req.body.password});
+        if (userdata.length === 0) {
+            // tslint:disable-next-line:no-console
+            console.log('Đăng nhập không thành công')
+
+        } else {
+            // console.log(user);
+            try {
+                res.send({status: true, msg: ""});
+            } catch (e) {
+                res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
+            }
+        }
     }
 
     public async createCustomer(request: Request, response: Response): Promise<void> {
