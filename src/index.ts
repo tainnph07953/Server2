@@ -101,3 +101,46 @@ app.post('/food', async (req: Request, res: Response) => {
         console.log('Cửa hàng da ton tai')
     }
 });
+
+app.post('/signupuser', async (req: Request, res: Response) => {
+    const user = {
+        userName: req.body.userName,
+        password: req.body.password
+    };
+    // console.log(user);
+    const userdata = await Admin.find({userName: req.body.userName});
+    if (userdata.length === 0) {
+        const users = await Admin.create(user)
+        try {
+            res.send({status: true, user: users});
+        } catch (e) {
+            res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
+        }
+    } else {
+        res.send({status: false, msg: "user đã tồn tại"});
+        // tslint:disable-next-line:no-console
+        console.log('User da ton tai')
+    }
+
+
+});
+app.post('/signinuser', async (req: Request, res: Response) => {
+    const user = {
+        userName: req.body.userName,
+        password: req.body.password
+    };
+
+    const userdata = await Admin.find({userName: req.body.userName, password: req.body.password});
+    if (userdata.length === 0) {
+        // tslint:disable-next-line:no-console
+        console.log('Đăng nhập không thành công')
+
+    } else {
+        // console.log(user);
+        try {
+            res.send({status: true, msg: ""});
+        } catch (e) {
+            res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
+        }
+    }
+});
