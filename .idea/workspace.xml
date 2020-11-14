@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +134,9 @@
       <list>
         <item itemvalue="npm.start" />
         <item itemvalue="npm.clean" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.clean" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
