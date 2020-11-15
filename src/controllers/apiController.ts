@@ -8,6 +8,22 @@ import OrderDetailModel, {OrderDetail} from "../models/OrderDetail";
 import OrderModel, {Order} from "../models/Order";
 import UserInformationModel,{userInformation} from "../models/userMobile/userInformation";
 import mongoose from "mongoose";
+import multer from "multer";
+let nameImage: string = ''
+const storage = multer.diskStorage({
+    destination(req: Request, files, callback) {
+        callback(null, './src/public/uploads');
+    },
+    filename(req: Request, files, callback) {
+        // Accept images only
+        if (!files.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
+            return callback(new Error('Sai dinh dang'), "");
+        }
+        const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
+        nameImage = newNameFile;
+        callback(null, newNameFile);
+    }
+});
 
 
 
@@ -49,23 +65,61 @@ class ApiController {
         } else {
             // console.log(user);
             try {
+                const user: usermobile[] = await userMobileModel.find().lean()
                 res.send({status: true, msg: ""});
+                // tslint:disable-next-line:no-console
             } catch (e) {
                 res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
             }
         }
     }
-
+    public async Information(request: Request, response: Response): Promise<void> {
+        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).single('Image')
+        upload(request, response, (err) => {
+            if (err) {
+                response.send(err)
+                return
+            }
+            const information: userInformation  = new UserInformationModel({
+                userName: request.body.userName,
+                appetite: request.body.appetite,
+                image: 'uploads/' + nameImage,
+            })
+            information.save();
+            nameImage = ''
+            response.redirect('vote')
+        })
+        // const information : userInformation = new UserInformationModel({
+        //     userName: request.body.userName,
+        //     appetite: request.body.appetite,
+        // })
+        // const userInformations: userInformation[] = await UserInformationModel.find().lean()
+        // for (const item of userInformations) {
+        //     // if (item.userName === request.body.userName) {
+        //     //     response.sendStatus(409)// da ton tai
+        //     //     return;
+        //     // }
+        // }
+        // await information.save((err => {
+        //     if (err) {
+        //         response.sendStatus(400) // loi sever
+        //         return;
+        //     } else {
+        //         response.sendStatus(200); // ok
+        //     }
+        // }));
+    }
     public async UpdatePassword(request: Request, response: Response): Promise<void> {
         const id = request.params.id;
-        const user: usermobile[] = request.body;
-        const users = await userMobileModel.findByIdAndUpdate(id, user).setOptions({ userName: false, password: true });
-        if (users) {
-            response.send(users);
-        } else {
-            // @ts-ignore
-            next(new PostNotFoundException(id));
-        }
+        const user = request.body;
+        const options = {new: true};
+        UserInformationModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
+            if (err){
+                response.send(err);
+            }else {
+                response.send("thanhcong");
+            }
+        })
     }
 
     public async getAllProduct(request: Request, response: Response): Promise<void> {
