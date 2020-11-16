@@ -46,12 +46,13 @@ class AddVoteController {
                 nameImage: 'uploads/' + nameImage,
                 like: request.body.like,
                 dislike: request.body.dislike
-            })
+            });
             vote.save();
             nameImage = ''
             response.redirect('vote')
+
         })
+
     }
 }
-
 export const addVoteController = new AddVoteController();

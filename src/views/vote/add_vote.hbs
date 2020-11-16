@@ -15,19 +15,19 @@
                 <div class="col">
                     <label for="exampleInputPassword1">Tỉnh thành </label>
                     <select name="thanhPho" type="text" class="form-control" id="thanhPho">
-                        <option value="000">--Chọn thành phố--</option>
+                        <option value="name">--Chọn thành phố--</option>
                     </select>
                 </div>
                 <div class="col">
                     <label for="exampleInputPassword1">Quận huyện</label>
                     <select name="quanHuyen" type="text" class="form-control" id="quanHuyen">
-                        <option value="000">--Chọn quận huyên--</option>
+                        <option value="name">--Chọn quận huyên--</option>
                     </select>
                 </div>
                 <div class="col">
                     <label for="exampleInputPassword1">Xã Phường</label>
                     <select name="xaPhuong" type="text" class="form-control" id="xaPhuong">
-                        <option value="000">--Chọn xã phường--</option>
+                        <option value="name">--Chọn xã phường--</option>
                     </select>
                 </div>
             </div>
@@ -58,7 +58,6 @@
         <button type="submit" class="btn btn-primary mt-3">Thêm đánh giá của bạn</button>
     </form>
 </div>
-
 <script>
     var myJson = {
         "country": [
@@ -5529,7 +5528,7 @@
         var country_id;
         var state_id;
 
-        $("#thanhPho").append('<option rel="' + index + '" value="' + value.id + '">' + value.name + '</option>');
+        $("#thanhPho").append('<option rel  ="' + index + '" value="' + value.name + '">' + value.name + '</option>');
 
         $("#thanhPho").change(function () {
             $("#quanHuyen, #xaPhuong").find("option:gt(0)").remove();
@@ -5540,12 +5539,10 @@
 
             $.each(myJson.country[country_id].huyen, function (index1, value1) {
                 $("#quanHuyen").find("option:first").text("Chọn");
-                $("#quanHuyen").append('<option rel="' + index1 + '" value="' + value1.id + '">' + value1.name + '</option>');
+                $("#quanHuyen").append('<option rel="' + index1 + '" value="' + value1.name + '">' + value1.name + '</option>');
             });
 
         });
-
-
         $("#quanHuyen").change(function () {
             $("#xaPhuong").find("option:gt(0)").remove();
             $("#xaPhuong").find("option:first").text("Loading...");
@@ -5555,11 +5552,8 @@
 
             $.each(myJson.country[country_id].huyen[state_id].xa, function (index2, value2) {
                 $("#xaPhuong").find("option:first").text("Chọn");
-                $("#xaPhuong").append('<option rel="' + index2 + '" value="' + value2.id + '">' + value2.name + '</option>');
+                $("#xaPhuong").append('<option rel="' + index2 + '" value="' + value2.name + '">' + value2.name + '</option>');
             });
-
-
         });
-
     });
 </script>
