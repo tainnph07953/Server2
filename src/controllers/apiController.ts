@@ -80,15 +80,37 @@ class ApiController {
                 response.send(err)
                 return
             }
-            const information: userInformation  = new UserInformationModel({
+            const usermobiles: userInformation = new UserInformationModel({
                 userName: request.body.userName,
-                appetite: request.body.appetite,
                 image: 'uploads/' + nameImage,
+                appetite: request.body.appetite
             })
-            information.save();
-            nameImage = ''
-            response.redirect('vote')
-        })
+            nameImage = '';
+            // tslint:disable-next-line:no-shadowed-variable
+            usermobiles.save((erSr => {
+                if (err) {
+                    response.sendStatus(400) // loi sever
+                    return;
+                } else {
+                    response.sendStatus(200); // ok
+                }
+            }));
+        });
+        // const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).single('Image')
+        // upload(request, response, (err) => {
+        //     if (err) {
+        //         response.send(err)
+        //         return
+        //     }
+        //     const information: userInformation  = new UserInformationModel({
+        //         userName: request.body.userName,
+        //         appetite: request.body.appetite,
+        //         image: 'uploads/' + nameImage,
+        //     })
+        //     information.save();
+        //     nameImage = ''
+        //     response.redirect('vote')
+        // })
         // const information : userInformation = new UserInformationModel({
         //     userName: request.body.userName,
         //     appetite: request.body.appetite,

@@ -18,8 +18,8 @@ router.post('/getOrderIsSend', apiController.getOrderIsSend)
 router.post('/getVote', apiController.getAllVote)
 router.post('/signupuser', apiController.signupuser)
 router.post('/signinuser', apiController.signinuser)
-router.post('/changePassword', apiController.UpdatePassword)
 
+router.post('/changePassword', apiController.UpdatePassword)
 router.post('/information', apiController.Information)
 
 
