@@ -20,9 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +250,7 @@
       <workItem from="1605455679333" duration="1662000" />
       <workItem from="1605457452921" duration="1496000" />
       <workItem from="1605459208536" duration="1549000" />
-      <workItem from="1605492564665" duration="716000" />
+      <workItem from="1605492564665" duration="933000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -304,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605455852966</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updatedoimk">
+      <created>1605493435439</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605493435439</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +332,8 @@
     <MESSAGE value="/updateLike" />
     <MESSAGE value="updatePassword" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="updatedoimk" />
+    <option name="LAST_COMMIT_MESSAGE" value="updatedoimk" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -358,10 +363,10 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
-    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1605455851369">
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1605493433587">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1605455851369" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1605493433587" />
     <state x="134" y="48" key="DiffContextDialog" timestamp="1605261884738">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
