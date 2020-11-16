@@ -7,6 +7,24 @@ import OrderModel, {Order} from "../models/Order";
 import VoteModel, {Vote} from "../models/Vote";
 import UserInformationModel,{userInformation} from "../models/userMobile/userInformation";
 import mongoose from "mongoose";
+import userMobileModel,{usermobile} from "../models/userMobile/userMobile";
+
+import multer from "multer";
+let nameImage: string = ''
+const storage = multer.diskStorage({
+    destination(req: Request, files, callback) {
+        callback(null, './src/public/uploads');
+    },
+    filename(req: Request, files, callback) {
+        // Accept images only
+        if (!files.originalname.match(/\.(jpg|JPG|jpeg|JPE|png|PNG)$/)) {
+            return callback(new Error('Sai dinh dang'), "");
+        }
+        const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
+        nameImage = newNameFile;
+        callback(null, newNameFile);
+    }
+});
 
 
 class ApiController {
@@ -41,6 +59,84 @@ class ApiController {
             response.send(order.listProduct)
         }
     }
+
+    public async signupuser(request: Request, response: Response): Promise<void> {
+        const usermobiles : usermobile = new userMobileModel({
+            userName: request.body.userName,
+            password: request.body.password,
+        })
+        const user: usermobile[] = await userMobileModel.find().lean()
+        for (const item of user) {
+            if (item.userName === request.body.userName) {
+                response.sendStatus(409)// da ton tai
+                return;
+            }
+        }
+        await usermobiles.save((err => {
+            if (err) {
+                response.sendStatus(400) // loi sever
+                return;
+            } else {
+                response.sendStatus(200); // ok
+            }
+        }));
+    }
+    public async signinuser(req: Request, res: Response): Promise<void>{
+        const userdata = await userMobileModel.find({userName: req.body.userName, password: req.body.password});
+        if (userdata.length === 0) {
+            // tslint:disable-next-line:no-console
+            console.log('Đăng nhập không thành công')
+
+        } else {
+            // console.log(user);
+            try {
+                // const user: usermobile[] = await userMobileModel.find().lean()
+                res.send({status: true, msg: ""});
+                // tslint:disable-next-line:no-console
+            } catch (e) {
+                res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
+            }
+        }
+    }
+    public async Information(request: Request, response: Response): Promise<void> {
+        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).single('Image')
+        upload(request, response, (err) => {
+            if (err) {
+                response.send(err)
+                return
+            }
+            const usermobiles: userInformation = new UserInformationModel({
+                userName: request.body.userName,
+                image: 'uploads/' + nameImage,
+                appetite: request.body.appetite
+            })
+            nameImage = '';
+            // tslint:disable-next-line:no-shadowed-variable
+            usermobiles.save((erSr => {
+                if (err) {
+                    response.sendStatus(400) // loi sever
+                    return;
+                } else {
+                    response.sendStatus(200); // ok
+                }
+            }));
+        });
+    }
+    public async UpdatePassword(request: Request, response: Response): Promise<void> {
+        const id = request.params.userName;
+        const user = request.body;
+        // tslint:disable-next-line:no-console
+        console.log(user);
+        const options = {new: true};
+        userMobileModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
+            if (err){
+                response.send(err);
+            }else {
+                response.send("thanhcong");
+            }
+        })
+    }
+
 
     public async updateLike(request: Request, response: Response): Promise<void> {
         const index = request.body.index;

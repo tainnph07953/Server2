@@ -18,4 +18,10 @@ router.post('/getVote', apiController.getAllVote)
 router.post('/getInformation', apiController.getAllInformation)
 router.post('/updateLike', apiController.updateLike)
 
+router.post('/signupuser', apiController.signupuser)
+router.post('/signinuser', apiController.signinuser)
+
+router.post('/changePassword', apiController.UpdatePassword)
+router.post('/information', apiController.Information)
+
 export default router
