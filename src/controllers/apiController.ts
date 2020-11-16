@@ -110,16 +110,38 @@ class ApiController {
         // }));
     }
     public async UpdatePassword(request: Request, response: Response): Promise<void> {
-        const id = request.params.id;
+        const id = request.params.userName;
         const user = request.body;
+        // tslint:disable-next-line:no-console
+        console.log(user);
         const options = {new: true};
-        UserInformationModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
+        userMobileModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
             if (err){
                 response.send(err);
             }else {
                 response.send("thanhcong");
             }
         })
+       // userMobileModel
+       //      .findOneAndUpdate(
+       //          {
+       //              userName: request.params.userName  // search query
+       //          },
+       //          {
+       //              userName: request.body.password   // field:values to update
+       //          },
+       //          {
+       //              new: true,                       // return updated doc
+       //              runValidators: true              // validate before update
+       //          })
+       //      .then(doc => {
+       //          // tslint:disable-next-line:no-console
+       //          console.log(doc)
+       //      })
+       //      .catch(err => {
+       //          // tslint:disable-next-line:no-console
+       //          console.error(err)
+       //      })
     }
 
     public async getAllProduct(request: Request, response: Response): Promise<void> {

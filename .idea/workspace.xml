@@ -250,6 +250,10 @@
       <workItem from="1605438386954" duration="2347000" />
       <workItem from="1605452145544" duration="2838000" />
       <workItem from="1605455235681" duration="222000" />
+      <workItem from="1605455679333" duration="1662000" />
+      <workItem from="1605457452921" duration="1496000" />
+      <workItem from="1605459208536" duration="1549000" />
+      <workItem from="1605492564665" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -293,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605325355542</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1605455852966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605455852966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +327,8 @@
     <MESSAGE value="Commit code server user and food" />
     <MESSAGE value="/updateLike" />
     <MESSAGE value="updatePassword" />
-    <option name="LAST_COMMIT_MESSAGE" value="updatePassword" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -346,10 +358,10 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
-    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1605455711744">
+    <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1605455851369">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1605455711744" />
+    <state x="398" y="0" key="CommitChangelistDialog2/0.0.1304.768@0.0.1304.768" timestamp="1605455851369" />
     <state x="134" y="48" key="DiffContextDialog" timestamp="1605261884738">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
@@ -470,10 +482,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1605455732231">
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2" timestamp="1605493416144">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605455732231" />
+    <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605493416144" />
     <state x="586" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604890303665">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
