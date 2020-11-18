@@ -1,4 +1,4 @@
-import express, {Request, Response} from 'express'
+import express, {NextFunction, Request, Response} from 'express'
 import hbs from 'express-handlebars'
 import path from 'path'
 
@@ -30,9 +30,11 @@ const app = express();
 import ('./database');
 // @ts-ignore
 import databases from './database';
+import UserInformationModel from "./models/userMobile/userInformation";
+import userMobile from "./models/userMobile/userMobile";
 
 // Setting
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 8000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', hbs({
     extname: '.hbs',
@@ -102,7 +104,6 @@ app.post('/food', async (req: Request, res: Response) => {
     }
 });
 
-
 app.post('/signupuser', async (req: Request, res: Response) => {
     const user = {
         userName: req.body.userName,
@@ -125,6 +126,18 @@ app.post('/signupuser', async (req: Request, res: Response) => {
 
 
 });
+// app.post('/updatePassword', async (req: Request,res: Response)=>{
+//     const id = req.params.id;
+//     const user = req.body;
+//     const options = {new: true};
+//     UserInformationModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
+//         if (err){
+//             res.send(err);
+//         }else {
+//             res.send("thanhcong");
+//         }
+//     })
+// })
 app.post('/signinuser', async (req: Request, res: Response) => {
     const user = {
         userName: req.body.userName,
@@ -144,6 +157,10 @@ app.post('/signinuser', async (req: Request, res: Response) => {
             res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
         }
     }
-
-
 });
+app.post('/updatee', async (req:Request, res: Response, next:NextFunction)=>{
+    const userName = req.params.userName;
+    const password = req.body.password;
+    await userMobile.findOneAndUpdate({"userName": userName},{"password": password});
+    res.end();
+})

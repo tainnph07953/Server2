@@ -5,12 +5,14 @@ import mongoose, {Schema,model} from "mongoose";
 export interface usermobile extends mongoose.Document{
     userName:string,
     password: string,
+    appetite: string,
 }
 
 const UserMobile= new Schema(
     {
         userName: String,
-        password: String
+        password: String,
+        appetite: String,
     }
 );
 export default model<usermobile>('UserMobile', UserMobile,"UserMobiles")

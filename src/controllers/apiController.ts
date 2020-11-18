@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
 
 class ApiController {
     public async getAllInformation(request: Request, response: Response): Promise<void> {
-        const listInformation = await UserInformationModel.find().lean()
+        const listInformation = await userMobileModel.find().lean()
         response.send(listInformation)
     }
 
@@ -64,6 +64,7 @@ class ApiController {
         const usermobiles : usermobile = new userMobileModel({
             userName: request.body.userName,
             password: request.body.password,
+            appetite: request.body.appetite
         })
         const user: usermobile[] = await userMobileModel.find().lean()
         for (const item of user) {
@@ -86,57 +87,71 @@ class ApiController {
         if (userdata.length === 0) {
             // tslint:disable-next-line:no-console
             console.log('Đăng nhập không thành công')
-
-        } else {
+            return ;
+        }
+        else {
             // console.log(user);
             try {
-                // const user: usermobile[] = await userMobileModel.find().lean()
                 res.send({status: true, msg: ""});
                 // tslint:disable-next-line:no-console
+                // const listInformation = await userMobileModel.find().lean()
+                // res.send(listInformation)
+                const userdatas = await userMobileModel.find({userName: req.body.userName}).lean();
+                // tslint:disable-next-line:no-console
+                console.log("userdata",userdatas)
             } catch (e) {
                 res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
             }
         }
+
     }
-    public async Information(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage, limits: {fieldSize: 10 * 1024 * 1024}}).single('Image')
-        upload(request, response, (err) => {
-            if (err) {
-                response.send(err)
-                return
-            }
-            const usermobiles: userInformation = new UserInformationModel({
-                userName: request.body.userName,
-                image: 'uploads/' + nameImage,
-                appetite: request.body.appetite
-            })
-            nameImage = '';
-            // tslint:disable-next-line:no-shadowed-variable
-            usermobiles.save((erSr => {
-                if (err) {
-                    response.sendStatus(400) // loi sever
-                    return;
-                } else {
-                    response.sendStatus(200); // ok
-                }
-            }));
-        });
-    }
+
+    // public async information(req: Request,res: Response): Promise<void>{
+    //     const usermobiles : usermobile = new userMobileModel({
+    //         userName: req.body.userName,
+    //         password: req.body.password,
+    //     })
+    //     const user: usermobile[] = await userMobileModel.find().lean()
+    //     for (const item of user) {
+    //         if (item.userName === req.body.userName) {
+    //             res.sendStatus(200)// da ton tai
+    //             // const listInformation = await userMobileModel.find().lean()
+    //             res.send(user)
+    //             return;
+    //         }
+    //     }
+    //     await usermobiles.errors;
+    // }
+
     public async UpdatePassword(request: Request, response: Response): Promise<void> {
-        const id = request.params.userName;
-        const user = request.body;
-        // tslint:disable-next-line:no-console
-        console.log(user);
-        const options = {new: true};
-        userMobileModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
-            if (err){
+        const userdata = await userMobileModel.find({userName: request.body.userName});
+        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {password: request.body.password}},(err,doc) => {
+            if (err) {
                 response.send(err);
-            }else {
-                response.send("thanhcong");
+                return;
+            }
+            else {
+                response.json({
+                    message: 'Thanh cong'
+                });
+                return;
             }
         })
     }
-
+    public async Updateappetite(request: Request, response: Response):Promise<void>{
+        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {appetite: request.body.appetite}},(err,doc) => {
+            if (err) {
+                response.send(err);
+                return;
+            }
+            else {
+                response.json({
+                    message: 'Thanh cong'
+                });
+                return;
+            }
+        })
+    }
 
     public async updateLike(request: Request, response: Response): Promise<void> {
         const index = request.body.index;
