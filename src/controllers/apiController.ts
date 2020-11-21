@@ -91,12 +91,14 @@ class ApiController {
         userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {appetite: request.body.appetite}},(err,doc) => {
             if (err) {
                 response.send(err);
+                console.log( request.body.appetite)
                 return;
             }
             else {
-                response.json({
-                    message: 'Cập nhật sở thích thành công'
+                response.send({
+                    status: 'true', appetite:request.body.appetite
                 });
+                console.log( request.body.appetite)
                 return;
             }
         })
