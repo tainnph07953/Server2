@@ -54,17 +54,13 @@ class ApiController {
             return ;
         }
         else {
-            // console.log(user);
             try {
                 // tslint:disable-next-line:no-console
-                // const listInformation = await userMobileModel.find().lean()
-                // res.send(listInformation)
                 const userdatas = await userMobileModel.find({userName: req.body.userName}).lean();
                 // tslint:disable-next-line:no-console
                 console.log("userdata",userdatas)
                 res.send({status: true, msg: "",userdatas});
-
-                // res.send(userdatas)
+                res.send(userdatas)
             } catch (e) {
                 res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
             }
@@ -91,6 +87,7 @@ class ApiController {
         userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {appetite: request.body.appetite}},(err,doc) => {
             if (err) {
                 response.send(err);
+                // tslint:disable-next-line:no-console
                 console.log( request.body.appetite)
                 return;
             }
@@ -98,6 +95,7 @@ class ApiController {
                 response.send({
                     status: 'true', appetite:request.body.appetite
                 });
+                // tslint:disable-next-line:no-console
                 console.log( request.body.appetite)
                 return;
             }

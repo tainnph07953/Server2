@@ -34,7 +34,7 @@ import UserInformationModel from "./models/userMobile/userInformation";
 import userMobile from "./models/userMobile/userMobile";
 
 // Setting
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 8100);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', hbs({
     extname: '.hbs',
@@ -123,7 +123,6 @@ app.post('/signupuser', async (req: Request, res: Response) => {
         // tslint:disable-next-line:no-console
         console.log('User da ton tai')
     }
-
 
 });
 // app.post('/updatePassword', async (req: Request,res: Response)=>{

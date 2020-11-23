@@ -85128,7 +85128,7 @@
             console.log("Country INDEX : " + country_id);
 
             $.each(myJson.country[country_id].huyen, function (index1, value1) {
-                $("#quanHuyen").find("option:first").text("Chọn");
+                $("#quanHuyen").find("option:first").text("Chọn quận huyện ");
                 $("#quanHuyen").append('<option rel="' + index1 + '" value="' + value1.name + '">' + value1.name + '</option>');
             });
 
@@ -85141,7 +85141,7 @@
             console.log("State INDEX : " + state_id);
 
             $.each(myJson.country[country_id].huyen[state_id].xa, function (index2, value2) {
-                $("#xaPhuong").find("option:first").text("Chọn");
+                $("#xaPhuong").find("option:first").text("Chọn xã phường");
                 $("#xaPhuong").append('<option rel="' + index2 + '" value="' + value2.name + '">' + value2.name + '</option>');
             });
         });
