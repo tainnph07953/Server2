@@ -36,67 +36,6 @@ class ListProductController {
             }
         }))
     }
-
-    public async update(request: Request, response: Response): Promise<void> {
-        const upload = await multer({storage}).single('selectFile')
-        upload(request, response, (err) => {
-            if (err) {
-                response.send(err)
-                return
-            }
-
-            if (nameImage.toString() === "") {
-                ProductModel.findByIdAndUpdate(request.body.id,
-                    {
-                        name: request.body.nameProductUpdate,
-                        price: request.body.priceProductUpdate,
-                        amount: request.body.amountProductUpdate,
-                        brand: request.body.brandProductUpdate,
-                        size: request.body.sizeProductUpdate,
-                        tukhoa: request.body.tukhoaUpdate,
-                        // tslint:disable-next-line:no-shadowed-variable
-                    }, err => {
-                        if (err) {
-                            // tslint:disable-next-line:no-console
-                            response.send(err)
-                        } else {
-                            response.redirect('/product')
-                        }
-                    }
-                )
-
-            } else {
-                ProductModel.findByIdAndUpdate(request.body.id,
-                    {
-                        name: request.body.nameProductUpdate,
-                        price: request.body.priceProductUpdate,
-                        amount: request.body.amountProductUpdate,
-                        brand: request.body.brandProductUpdate,
-                        size: request.body.sizeProductUpdate,
-                        tukhoa: request.body.tukhoaUpdate,
-                        urlImage: 'uploads/' + nameImage
-                        // tslint:disable-next-line:no-shadowed-variable
-                    }, err => {
-                        if (err) {
-                            // tslint:disable-next-line:no-console
-                            response.send(err)
-                        } else {
-                            response.redirect('/product')
-                        }
-                    }
-                )
-            }
-            // const product: Product = new ProductModel({
-            //     name: request.body.nameProduct,
-            //     price: request.body.price,
-            //     amount: request.body.amount,
-            //     urlImage: 'uploads/'+nameImage
-            // })
-            // product.save();
-            nameImage = ''
-        })
-
-    }
 }
 
 export const listProductController = new ListProductController()

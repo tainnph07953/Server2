@@ -1,7 +1,6 @@
 import {Request, Response} from "express";
 import VoteModel, {Vote} from "../models/Vote";
-import userMobileModel,{usermobile} from "../models/userMobile/userMobile";
-
+import userMobileModel, {usermobile} from "../models/userMobile/userMobile";
 
 class ApiController {
     public async getAllInformation(request: Request, response: Response): Promise<void> {
@@ -20,7 +19,7 @@ class ApiController {
     }
 
     public async signupuser(request: Request, response: Response): Promise<void> {
-        const usermobiles : usermobile = new userMobileModel({
+        const usermobiles: usermobile = new userMobileModel({
             userName: request.body.userName,
             password: request.body.password,
             appetite: request.body.appetite
@@ -31,8 +30,7 @@ class ApiController {
                 response.send('Tài khoản đã tồn tại')
                 // response.sendStatus(409)// da ton tai
                 return;
-            }
-            else if (request.body.password.length < 6){
+            } else if (request.body.password.length < 6) {
                 response.send('Mật khẩu phải lớn hơn hoặc bằng 6 ký tự')
                 return;
             }
@@ -46,20 +44,20 @@ class ApiController {
             }
         }));
     }
-    public async signinuser(req: Request, res: Response): Promise<void>{
+
+    public async signinuser(req: Request, res: Response): Promise<void> {
         const userdata = await userMobileModel.find({userName: req.body.userName, password: req.body.password});
         if (userdata.length === 0) {
             // tslint:disable-next-line:no-console
-            console.log('Đăng nhập thất bại!')
-            return ;
-        }
-        else {
+            res.send("Đăng nhập thất bại");
+            return;
+        } else {
             try {
                 // tslint:disable-next-line:no-console
                 const userdatas = await userMobileModel.find({userName: req.body.userName}).lean();
                 // tslint:disable-next-line:no-console
-                console.log("userdata",userdatas)
-                res.send({status: true, msg: "",userdatas});
+                console.log("userdata", userdatas)
+                res.send({status: true, msg: "", userdatas});
                 res.send(userdatas)
             } catch (e) {
                 res.send({status: false, msg: 'Co loi xay ra: ' + e.message})
@@ -69,12 +67,11 @@ class ApiController {
     }
 
     public async UpdatePassword(request: Request, response: Response): Promise<void> {
-        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {password: request.body.password}},(err,doc) => {
+        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {password: request.body.password}}, (err, doc) => {
             if (err) {
                 response.send(err);
                 return;
-            }
-            else {
+            } else {
                 response.send('Đổi mật khẩu thành công')
                 // response.json({
                 //     message: 'Đổi mật khẩu thành công'
@@ -83,41 +80,25 @@ class ApiController {
             }
         })
     }
-    public async Updateappetite(request: Request, response: Response):Promise<void>{
-        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {appetite: request.body.appetite}},(err,doc) => {
+
+    public async Updateappetite(request: Request, response: Response): Promise<void> {
+        userMobileModel.findOneAndUpdate({userName: request.body.userName}, {$set: {appetite: request.body.appetite}}, (err, doc) => {
             if (err) {
                 response.send(err);
                 // tslint:disable-next-line:no-console
-                console.log( request.body.appetite)
+                console.log(request.body.appetite)
                 return;
-            }
-            else {
+            } else {
                 response.send({
-                    status: 'true', appetite:request.body.appetite
+                    status: 'true', appetite: request.body.appetite
                 });
                 // tslint:disable-next-line:no-console
-                console.log( request.body.appetite)
+                console.log(request.body.appetite)
                 return;
             }
         })
     }
 
-    public async updateLike(request: Request, response: Response): Promise<void> {
-        const count =+1;
-            VoteModel.findOneAndUpdate({tenMonAn: request.body.tenMonAn, tenCuaHang:request.body.tenCuaHang}, {$set: {like: count}},(err,doc) => {
-                if (err) {
-                    response.send(err);
-                    return;
-                }
-                else {
-                    // const count =+1;
-                    response.json({
-                        message: 'Thanh cong'
-                    });
-                    return count;
-                }
-            })
-}
 
 }
 

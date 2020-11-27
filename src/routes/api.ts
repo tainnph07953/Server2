@@ -7,7 +7,7 @@ router.get('/getInformation', apiController.getAllInformation)
 router.get('/Rating', apiController.getAllFavorite)
 
 router.post('/getVote', apiController.getAllVote)
-router.post('/updateLike', apiController.updateLike)
+// router.post('/updateLike', apiController.updateLike)
 
 router.post('/signupuser', apiController.signupuser)
 router.post('/signinuser', apiController.signinuser)

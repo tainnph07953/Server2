@@ -1,12 +1,9 @@
 import {Request, Response} from 'express'
 import multer from "multer";
 import VoteModel, {Vote} from '../models/Vote'
-import OrderModel from "../models/Order";
 import ProductModel from "../models/Product";
-import os from "os";
 
 let nameImage: string = ''
-
 const storage = multer.diskStorage({
     destination(req: Request, files, callback) {
         callback(null, './src/public/uploads');

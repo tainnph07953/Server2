@@ -162,4 +162,4 @@ app.post('/updatee', async (req:Request, res: Response, next:NextFunction)=>{
     const password = req.body.password;
     await userMobile.findOneAndUpdate({"userName": userName},{"password": password});
     res.end();
-})
+});
