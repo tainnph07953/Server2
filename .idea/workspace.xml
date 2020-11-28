@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="update like and dislike">
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="cập nhật api like and dislike. API trả anh dạng array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/listVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +272,7 @@
       <workItem from="1606271721492" duration="12005000" />
       <workItem from="1606380626938" duration="4824000" />
       <workItem from="1606490466802" duration="502000" />
-      <workItem from="1606538921278" duration="6548000" />
+      <workItem from="1606538921278" duration="6996000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -360,7 +358,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606491032136</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="cập nhật api like and dislike. API trả anh dạng array">
+      <created>1606546895797</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546895797</updated>
+    </task>
+    <task id="LOCAL-00014" summary="cập nhật api like and dislike. API trả anh dạng array">
+      <created>1606546932309</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546932309</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +399,8 @@
     <MESSAGE value="update changePassword and show information" />
     <MESSAGE value="update user" />
     <MESSAGE value="update like and dislike" />
-    <option name="LAST_COMMIT_MESSAGE" value="update like and dislike" />
+    <MESSAGE value="cập nhật api like and dislike. API trả anh dạng array" />
+    <option name="LAST_COMMIT_MESSAGE" value="cập nhật api like and dislike. API trả anh dạng array" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">

@@ -2,7 +2,7 @@
     <main>
         <div class="container-fluid mt-5">
             <div class="card mb-4">
-                <div class="card-header"><i class="fas fa-table mr-1"></i>Danh sách các món ăn</div>
+                <div class="card-header"><i class="fas fa-table mr-1"></i>Danh sách các món ăn </div>
                 <div class="card-body">
                     <div class="table-responsive">
                     </div>
@@ -16,8 +16,8 @@
                             <th style="text-align: center">Địa chỉ cửa hàng</th>
                             <th style="text-align: center">Giờ mở của</th>
                             <th style="text-align: center">Giờ đóng của</th>
-                            <th style="text-align: center">Thích</th>
-                            <th style="text-align: center">Không thích</th>
+<!--                            <th style="text-align: center">Thích</th>-->
+<!--                            <th style="text-align: center">Không thích</th>-->
                             <th style="text-align: center">Xóa</th>
                         </tr>
                         </thead>
@@ -30,8 +30,8 @@
                             <th style="text-align: center">Địa chỉ cửa hàng</th>
                             <th style="text-align: center">Giờ mở cửa</th>
                             <th style="text-align: center">Giờ đóng cửa</th>
-                            <th style="text-align: center">Thích</th>
-                            <th style="text-align: center">Không thích</th>
+<!--                            <th style="text-align: center">Thích</th>-->
+<!--                            <th style="text-align: center">Không thích</th>-->
                             <th style="text-align: center">Xóa</th>
                         </tr>
                         </tfoot>
@@ -54,8 +54,7 @@
                                 </td>
                                 <td>
                                     <div style=";width:auto;text-align: center;height: auto;padding-top: 30px">
-                                        {{this.tenDuong}}, {{this.xaPhuong}}, {{this.quanHuyen}}
-                                        , {{this.thanhPho}}</div>
+                                        {{this.tenDuong}}, {{this.xaPhuong}}, {{this.quanHuyen}}, {{this.thanhPho}}</div>
                                 </td>
                                 <td>
                                     <div style="width:auto;text-align: center;height: auto;padding-top: 30px">
@@ -65,16 +64,15 @@
                                     <div style="width:auto;text-align: center;height: auto;padding-top: 30px">
                                         {{this.gioDongCua}}</div>
                                 </td>
-                                <td>
-                                    <div style="width:auto;text-align: center;height: auto;padding-top: 30px">
-                                        {{this.like}} Lượt
-                                    </div>
-                                </td>
-                                <td>
-                                    <div style="width:auto;text-align: center;height: auto;padding-top: 30px">
-                                        {{this.dislike}} Lượt
-                                    </div>
-                                </td>
+<!--                                <td>-->
+<!--                                    <div style="width:auto;text-align: center;height: auto;padding-top: 30px">-->
+<!--                                        {{this.like}} Lượt</div>-->
+<!--                                </td>-->
+<!--                                <td>-->
+<!--                                    <div style="width:auto;text-align: center;height: auto;padding-top: 30px">-->
+<!--                                        {{this.dislike}} Lượt</div>-->
+<!--                                </td>-->
+
                                 <td>
                                     <div style="text-align: center;padding-top: 25%;height: auto">
                                         <button type="button" class="btn btn-primary btn-danger" data-toggle="modal"
@@ -112,7 +110,6 @@
                                             </div>
                                         </form>
                                     </div>
-                                </td>
                                 </td>
                             </tr>
                         {{/each}}
