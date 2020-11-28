@@ -19,41 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="update user">
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="update like and dislike">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/listProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listProductController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/listVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/listVoteController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604981383982-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604981430708-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604982348010-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604982637110-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604989268376-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604999290034-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604999675795-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1604999881219-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605000005590-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605076855129-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605076941166-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605077108222-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605077301206-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605170399525-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605170505616-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605170655217-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605170799592-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605170992439-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605171085942-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605171145829-tainnph07953-CAILAN18122-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/uploads/1605197535536-tainnph07953-CAILAN17887-1-550x550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/product.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/vote.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +273,8 @@
       <workItem from="1606230050528" duration="155000" />
       <workItem from="1606271721492" duration="12005000" />
       <workItem from="1606380626938" duration="4824000" />
-      <workItem from="1606490466802" duration="242000" />
+      <workItem from="1606490466802" duration="502000" />
+      <workItem from="1606538921278" duration="6548000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -382,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606103167332</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update like and dislike">
+      <created>1606491032136</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606491032136</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,7 +386,8 @@
     <MESSAGE value="updatedoimk" />
     <MESSAGE value="update changePassword and show information" />
     <MESSAGE value="update user" />
-    <option name="LAST_COMMIT_MESSAGE" value="update user" />
+    <MESSAGE value="update like and dislike" />
+    <option name="LAST_COMMIT_MESSAGE" value="update like and dislike" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -567,10 +546,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="251" y="110" key="Vcs.Push.Dialog.v2" timestamp="1606103192151">
+    <state x="251" y="110" key="Vcs.Push.Dialog.v2" timestamp="1606491055987">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="251" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606103192151" />
+    <state x="251" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606491055987" />
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605685406461" />
     <state x="282" y="124" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605777745906" />
     <state x="282" y="134" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1605777845517" />
@@ -604,10 +583,11 @@
     </state>
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768/1366.0.1280.994@0.0.1304.768" timestamp="1603871043356" />
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1605752004230" />
-    <state x="367" y="0" width="672" height="678" key="search.everywhere.popup" timestamp="1605599092577">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup" timestamp="1606541127862">
+      <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="367" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1605599092577" />
+    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup/0.23.1280.711@0.23.1280.711" timestamp="1606541127862" />
     <state x="2461" y="23" key="search.everywhere.popup/0.23.1920.1057/1920.23.1920.974@1920.23.1920.974" timestamp="1602753877594" />
   </component>
 </project>

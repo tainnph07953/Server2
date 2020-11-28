@@ -3,7 +3,7 @@ import multer from "multer";
 import VoteModel, {Vote} from '../models/Vote'
 import ProductModel from "../models/Product";
 
-let nameImage: string = ''
+let nameImage: string[] = []
 const storage = multer.diskStorage({
     destination(req: Request, files, callback) {
         callback(null, './src/public/uploads');
@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
             return callback(new Error('Sai dinh dang'), "");
         }
         const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
-        nameImage = newNameFile;
+        nameImage.push(`uploads/${newNameFile}`);
         callback(null, newNameFile);
     }
 });
@@ -40,12 +40,12 @@ class AddVoteController {
                 tenDuong: request.body.tenDuong,
                 gioMoCua: request.body.gioMoCua,
                 gioDongCua: request.body.gioDongCua,
-                nameImage: 'uploads/' + nameImage,
+                nameImage,
                 like: request.body.like,
                 dislike: request.body.dislike
             });
             vote.save();
-            nameImage = ''
+            nameImage = []
             response.redirect('vote')
 
         })

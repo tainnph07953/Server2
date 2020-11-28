@@ -4,6 +4,7 @@ import OrderModel from "../models/Order";
 import ProductModel from "../models/Product";
 import os from "os";
 import multer from "multer";
+import {mongo} from "mongoose";
 class ListVoteController {
     public async index(request: Request, response: Response): Promise<void> {
         const listVote = await VoteModel.find().lean()
@@ -78,39 +79,35 @@ class ListVoteController {
     //     })
 
     public async updateLike(request: Request, response: Response): Promise<void> {
-        const idLike = request.body.idLike;
-        const idUserLiked = request.body.idUserLiked;
-        //
-        const vote = await VoteModel.findById(idLike).lean();
-        const  userLiked = await VoteModel.findById(idUserLiked).lean();
-        //
-        if (vote != null) {
-            // tslint:disable-next-line:no-console
-            console.log();
-            // tslint:disable-next-line:triple-equals
-            if (vote.like == undefined) {
-                await VoteModel.findByIdAndUpdate(idLike, {like: 1});
-                response.send("OK");
-            } else {
-                await VoteModel.findByIdAndUpdate(idLike, {like: vote.like+1 });
-                response.send("Cập nhật Like thành công");
+        try {
+            const idLike = request.body.idLike;
+            const idUserLiked = request.body.idUserLiked;
+            await VoteModel.findByIdAndUpdate(idLike, {$pull: {dislike: idUserLiked}});
+            const hasItem = await VoteModel.findOne({_id: idLike, like: {$in: idUserLiked}})
+            if(hasItem) {
+                await VoteModel.findByIdAndUpdate(idLike, {$pull: {like: idUserLiked}});
+            }else {
+                await VoteModel.findByIdAndUpdate(idLike, {$addToSet: {like: idUserLiked}});
             }
+            response.send("OK");
+        } catch (e) {
+            response.send("Error");
         }
     }
     public async updateDisLike(request: Request, response: Response): Promise<void> {
-        const idLike = request.body.idLike;
-        const vote = await VoteModel.findById(idLike).lean();
-        if (vote != null) {
-            // tslint:disable-next-line:no-console
-            console.log();
-            // tslint:disable-next-line:triple-equals
-            if (vote.dislike == undefined) {
-                await VoteModel.findByIdAndUpdate(idLike, {dislike: 1});
-                response.send("OK");
-            } else {
-                await VoteModel.findByIdAndUpdate(idLike, {dislike: vote.dislike + 1});
-                response.send("Cập nhật DisLike thành công");
+        try {
+            const idLike = request.body.idLike;
+            const idUserDisliked = request.body.idUserDisliked;
+            await VoteModel.findByIdAndUpdate(idLike, {$pull: {like: idUserDisliked}});
+            const hasItem = await VoteModel.findOne({_id: idLike, dislike: {$in: idUserDisliked}})
+            if(hasItem) {
+                await VoteModel.findByIdAndUpdate(idLike, {$pull: {dislike: idUserDisliked}});
+            }else {
+                await VoteModel.findByIdAndUpdate(idLike, {$addToSet: {dislike: idUserDisliked}});
             }
+            response.send("OK");
+        } catch (e) {
+            response.send("Error");
         }
     }
 }
