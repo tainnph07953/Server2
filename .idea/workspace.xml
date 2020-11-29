@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="cập nhật api like and dislike. API trả anh dạng array">
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="cập nhật và sửa lỗi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -280,6 +276,8 @@
       <workItem from="1606538921278" duration="10558000" />
       <workItem from="1606559669450" duration="58000" />
       <workItem from="1606577565154" duration="5134000" />
+      <workItem from="1606614647104" duration="255000" />
+      <workItem from="1606621876935" duration="2592000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -386,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606547465594</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="cập nhật và sửa lỗi">
+      <created>1606614687253</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606614687253</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +419,8 @@
     <MESSAGE value="update user" />
     <MESSAGE value="update like and dislike" />
     <MESSAGE value="cập nhật api like and dislike. API trả anh dạng array" />
-    <option name="LAST_COMMIT_MESSAGE" value="cập nhật api like and dislike. API trả anh dạng array" />
+    <MESSAGE value="cập nhật và sửa lỗi" />
+    <option name="LAST_COMMIT_MESSAGE" value="cập nhật và sửa lỗi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -573,13 +579,14 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="251" y="121" key="Vcs.Push.Dialog.v2" timestamp="1606547480083">
-      <screen x="0" y="23" width="1280" height="711" />
+    <state x="251" y="123" key="Vcs.Push.Dialog.v2" timestamp="1606614701730">
+      <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="251" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606491055987" />
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605685406461" />
     <state x="282" y="124" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605777745906" />
     <state x="251" y="121" key="Vcs.Push.Dialog.v2/0.23.1280.711@0.23.1280.711" timestamp="1606547480083" />
+    <state x="251" y="123" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1606614701730" />
     <state x="282" y="134" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1605777845517" />
     <state x="488" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606099267744">
       <screen x="0" y="0" width="1280" height="800" />

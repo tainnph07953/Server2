@@ -11,7 +11,7 @@ router.post('/getVote', apiController.getAllVote)
 
 router.post('/signupuser', apiController.signupuser)
 router.post('/signinuser', apiController.signinuser)
-// router.post('/getUser', apiController.getUser)
+router.post('/InforFood', apiController.InforFood)
 
 router.post('/uploadAppetite',apiController.Updateappetite)
 router.post('/changePassword', apiController.UpdatePassword)
