@@ -27,9 +27,9 @@ const VoteSchema = new Schema(
         gioMoCua: String,
         gioDongCua: String,
         nameImage: [String],
-        like: [{type: String, unique: true}],
-        dislike: [{type: String, unique: true}],
-        userLiked:String,
+        like: [String],
+        dislike: [String],
+        userLiked: String,
     }
 );
 

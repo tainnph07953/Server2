@@ -15,5 +15,5 @@ router.post('/signinuser', apiController.signinuser)
 
 router.post('/uploadAppetite',apiController.Updateappetite)
 router.post('/changePassword', apiController.UpdatePassword)
-
+router.get('/getCoord', apiController.getCoord)
 export default router

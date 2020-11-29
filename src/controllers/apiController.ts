@@ -1,6 +1,7 @@
 import {Request, Response} from "express";
 import VoteModel, {Vote} from "../models/Vote";
 import userMobileModel, {usermobile} from "../models/userMobile/userMobile";
+import axios from 'axios';
 
 class ApiController {
     public async getAllInformation(request: Request, response: Response): Promise<void> {
@@ -98,6 +99,29 @@ class ApiController {
             }
         })
     }
+
+    public async getCoord(request: Request, response: Response) {
+        try {
+            const address: any = request.query.address
+            if(!address) {
+                return response.status(400).json({status: "Error", message: "Không có địa chỉ"})
+            }
+            const GOOGLE_KEY = "AIzaSyCome9bcD6gNMCccOchpk5itE5C2ClVqH0"
+            const responseData = await axios(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURI(address.split(" ").join("+"))}&key=${GOOGLE_KEY}`)
+            if(responseData.data.status === "OK") {
+                const locationResult = responseData.data.results[0].geometry.location
+                const coord = {
+                    latitude: locationResult.lat,
+                    longitude: locationResult.lng,
+                }
+                return response.status(200).json({status: "Success", coord})
+            }
+            return response.status(400).json({status: "Error", message: "Không tìm thấy vị trí"})
+        }catch (e) {
+            response.status(400).json({status: "Error", message: e.message})
+        }
+    }
+
 
 
 }

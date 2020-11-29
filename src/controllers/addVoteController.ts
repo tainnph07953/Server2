@@ -41,8 +41,8 @@ class AddVoteController {
                 gioMoCua: request.body.gioMoCua,
                 gioDongCua: request.body.gioDongCua,
                 nameImage,
-                like: request.body.like,
-                dislike: request.body.dislike
+                like: [],
+                dislike: []
             });
             vote.save();
             nameImage = []

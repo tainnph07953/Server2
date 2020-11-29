@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="cập nhật api like and dislike. API trả anh dạng array">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/vote/list_vote.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/addVoteController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/addVoteController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/apiController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/apiController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Vote.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Vote.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +277,9 @@
       <workItem from="1606271721492" duration="12005000" />
       <workItem from="1606380626938" duration="4824000" />
       <workItem from="1606490466802" duration="502000" />
-      <workItem from="1606538921278" duration="6996000" />
+      <workItem from="1606538921278" duration="10558000" />
+      <workItem from="1606559669450" duration="58000" />
+      <workItem from="1606577565154" duration="5134000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -372,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606546932309</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cập nhật api like and dislike. API trả anh dạng array">
+      <created>1606547465593</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606547465594</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,12 +573,13 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="251" y="110" key="Vcs.Push.Dialog.v2" timestamp="1606491055987">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="251" y="121" key="Vcs.Push.Dialog.v2" timestamp="1606547480083">
+      <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="251" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1606491055987" />
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605685406461" />
     <state x="282" y="124" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605777745906" />
+    <state x="251" y="121" key="Vcs.Push.Dialog.v2/0.23.1280.711@0.23.1280.711" timestamp="1606547480083" />
     <state x="282" y="134" key="Vcs.Push.Dialog.v2/0.23.1440.809@0.23.1440.809" timestamp="1605777845517" />
     <state x="488" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606099267744">
       <screen x="0" y="0" width="1280" height="800" />
@@ -596,11 +611,11 @@
     </state>
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768/1366.0.1280.994@0.0.1304.768" timestamp="1603871043356" />
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1605752004230" />
-    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup" timestamp="1606541127862">
+    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup" timestamp="1606584858850">
       <screen x="0" y="23" width="1280" height="711" />
     </state>
     <state x="367" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1605599092577" />
-    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup/0.23.1280.711@0.23.1280.711" timestamp="1606541127862" />
+    <state x="360" y="23" width="670" height="628" key="search.everywhere.popup/0.23.1280.711@0.23.1280.711" timestamp="1606584858850" />
     <state x="2461" y="23" key="search.everywhere.popup/0.23.1920.1057/1920.23.1920.974@1920.23.1920.974" timestamp="1602753877594" />
   </component>
 </project>
