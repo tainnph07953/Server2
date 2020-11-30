@@ -23,10 +23,11 @@ class ListVoteController {
             const hasItem = await VoteModel.findOne({_id: idLike, like: {$in: idUserLiked}})
             if(hasItem) {
                 await VoteModel.findByIdAndUpdate(idLike, {$pull: {like: idUserLiked}});
+                response.send("UnLike thành công !");
             }else {
                 await VoteModel.findByIdAndUpdate(idLike, {$addToSet: {like: idUserLiked}});
+                response.send("Like thành công");
             }
-            response.send("OK");
         } catch (e) {
             response.send("Error");
         }
@@ -39,10 +40,11 @@ class ListVoteController {
             const hasItem = await VoteModel.findOne({_id: idLike, dislike: {$in: idUserDisliked}})
             if(hasItem) {
                 await VoteModel.findByIdAndUpdate(idLike, {$pull: {dislike: idUserDisliked}});
+                response.send("UnDisLike thành công ");
             }else {
                 await VoteModel.findByIdAndUpdate(idLike, {$addToSet: {dislike: idUserDisliked}});
+                response.send("DisLike thành công ");
             }
-            response.send("OK");
         } catch (e) {
             response.send("Error");
         }
