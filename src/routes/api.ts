@@ -5,6 +5,9 @@ import {apiController} from "../controllers/apiController";
 
 router.get('/getAllProduct', apiController.getAllProduct)
 router.get('/Rating', apiController.getAllFavorite)
+router.get('/Nearlist', apiController.getAllNearlist)
+router.get('/OldList', apiController.getAllOldList)
+
 router.get('/getAllCustomer', apiController.getAllCustomer)
 router.post('/createCustomer', apiController.createCustomer)
 router.post('/createOrderDetail', apiController.createOrderDetail)
