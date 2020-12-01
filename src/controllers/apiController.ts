@@ -13,6 +13,14 @@ class ApiController {
         const listVote = await VoteModel.find().lean()
         response.send(listVote)
     }
+    public async getAllNearlist(request: Request, response: Response): Promise<void> {
+        const listFavorite = await VoteModel.find().lean()
+        response.send(listFavorite)
+    }
+    public async getAllOldList(request: Request, response: Response): Promise<void> {
+        const listFavorite = await VoteModel.find().lean()
+        response.send(listFavorite)
+    }
 
     public async getAllFavorite(request: Request, response: Response): Promise<void> {
         const listFavorite = await VoteModel.find().lean()

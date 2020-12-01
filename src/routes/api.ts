@@ -5,7 +5,8 @@ import {apiController} from "../controllers/apiController";
 
 router.get('/getInformation', apiController.getAllInformation)
 router.get('/Rating', apiController.getAllFavorite)
-
+router.get('/Nearlist', apiController.getAllNearlist)
+router.get('/OldList', apiController.getAllOldList)
 router.post('/getVote', apiController.getAllVote)
 // router.post('/updateLike', apiController.updateLike)
 
