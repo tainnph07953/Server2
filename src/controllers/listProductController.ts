@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
 class ListProductController {
     public async index(request: Request, response: Response): Promise<void> {
         const listProduct = await ProductModel.find().lean()
-        response.render('products/list_product', {listProduct, title: 'Danh sách món ăn'})
+        response.render('products/list_product', {listProduct, title: 'Danh sách cửa hàng hoạt động'})
     }
 
     public async delete(request: Request, response: Response): Promise<void> {

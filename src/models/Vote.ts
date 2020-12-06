@@ -26,6 +26,7 @@ const VoteSchema = new Schema(
         tenDuong: String,
         gioMoCua: String,
         gioDongCua: String,
+        coordinate: String,
         nameImage: [String],
         like: [String],
         dislike: [String],

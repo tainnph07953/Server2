@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 
 class AddProductController {
     public index(request: Request, response: Response) {
-        response.render('products/add_product/add.hbs', {title: 'Thêm món ăn'})
+        response.render('products/add_product/add.hbs', {title: 'Thêm cửa hàng mới'})
     }
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
@@ -31,12 +31,10 @@ class AddProductController {
                 return
             }
             const product: Product = new ProductModel({
-                name: request.body.nameProduct,
-                price: request.body.price,
-                amount: request.body.amount,
-                brand: request.body.brand,
-                size: request.body.size,
-                tukhoa: request.body.tukhoa,
+                name: request.body.name,
+                phone: request.body.phone,
+                date: request.body.date,
+                status: request.body.status,
                 urlImage: 'uploads/'+nameImage
             })
             product.save();

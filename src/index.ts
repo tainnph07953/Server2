@@ -8,12 +8,8 @@ import IndexRouter from './routes'
 import LoginRouter from './routes/login'
 import HomeRouter from './routes/home'
 import RegisterRouter from './routes/register'
-import CustomerRouter from './routes/customer'
 import ProductRouter from './routes/product'
 import AddProductRouter from './routes/add_product'
-import StatisticalRouter from './routes/statistical'
-import OrderRouter from './routes/order'
-import NotEnoughProductRouter from './routes/not_enough_product'
 import FavoriteRouter from './routes/favorite'
 import ApiRouter from './routes/api'
 import AddVote from './routes/add_vote'
@@ -56,12 +52,8 @@ app.use('/login', LoginRouter)
 app.use('/product', ProductRouter)
 app.use('/home', HomeRouter)
 app.use('/register', RegisterRouter)
-app.use('/customer', CustomerRouter)
 app.use('/add_product', AddProductRouter)
-app.use('/statistical', StatisticalRouter)
 app.use('/favorite', FavoriteRouter)
-app.use('/order', OrderRouter)
-app.use('/not_enough_product', NotEnoughProductRouter)
 app.use('/add_vote', AddVote)
 app.use('/vote', VoteRouter)
 app.use('/add_userInformation', AddInformation)
