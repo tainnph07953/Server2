@@ -13,6 +13,7 @@ export interface Vote extends mongoose.Document {
     nameImage: [string],
     like: [string],
     dislike: [string],
+    cmt: [string],
     userLiked:string,
 }
 
@@ -30,6 +31,7 @@ const VoteSchema = new Schema(
         nameImage: [String],
         like: [String],
         dislike: [String],
+        cmt: [String],
         userLiked: String,
     }
 );
