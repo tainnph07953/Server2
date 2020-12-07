@@ -10,6 +10,7 @@ router.get('/OldList', apiController.getAllOldList)
 router.get('/newList', apiController.getAllNewList)
 router.post('/getVote', apiController.getAllVote)
 router.get('/getStoreByCoord', apiController.getStoreByCoord)
+router.get('/getOtherFoods', apiController.getOtherFoods)
 
 router.post('/signupuser', apiController.signupuser)
 router.post('/signinuser', apiController.signinuser)

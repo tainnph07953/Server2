@@ -10,6 +10,21 @@ class ApiController {
         const listInformation = await userMobileModel.find().lean()
         response.send(listInformation)
     }
+    public async getOtherFoods(request: Request, response: Response): Promise<any> {
+        try {
+            const currentVote = await VoteModel.findById(request.query.id);
+            if (currentVote) {
+                const { tenDuong, quanHuyen, xaPhuong, thanhPho, tenCuaHang } = currentVote
+                const listInformation = await VoteModel.find({ tenDuong, quanHuyen, xaPhuong, thanhPho, tenCuaHang }).lean()
+                const filteredList = listInformation.filter(item => !item._id.equals(request.query.id));
+                return response.json(filteredList)
+            }
+            response.json([])
+        } catch (error) {
+            response.json([])
+        }
+    }
+
     public async getStoreByCoord(request: Request, response: Response): Promise<any> {
         try {
             const { latitude, longitude }: any = request.query
@@ -104,49 +119,49 @@ class ApiController {
         //     return;
         // }
         // else {
-            if (userdata !== req.body.userName){
-                const usermobiles: usermobile = new userMobileModel({
-                    userName: req.body.userName,
-                    password: req.body.password,
-                    appetite: req.body.appetite
-                })
-                const user: usermobile[] = await userMobileModel.find().lean()
-                for (const item of user) {
-                    if (item.userName === req.body.userName) {
-                        try {
-                            // this.signupuser(req,res);
+        if (userdata !== req.body.userName) {
+            const usermobiles: usermobile = new userMobileModel({
+                userName: req.body.userName,
+                password: req.body.password,
+                appetite: req.body.appetite
+            })
+            const user: usermobile[] = await userMobileModel.find().lean()
+            for (const item of user) {
+                if (item.userName === req.body.userName) {
+                    try {
+                        // this.signupuser(req,res);
 
-                            // tslint:disable-next-line:no-console
-                            // tslint:disable-next-line:no-console
-                            console.log("userdata", userdatas)
-                            res.send({ status: true, msg: "", userdatas });
-                            res.send(userdatas)
-                        } catch (e) {
-                            res.send({ status: false, msg: 'Co loi xay ra: ' + e.message })
-                        }
-                        // res.send('Tài khoản đã tồn tại')
-                        // response.sendStatus(409)// da ton tai
-                        return;
-                    } else if (req.body.password.length < 6) {
-                        res.send('Mật khẩu phải lớn hơn hoặc bằng 6 ký tự')
-                        return;
-                    }else if(req.body.userName.length <5){
-                        res.send("Username phải lớn hơn 5 kí tự")
-                    }
-                }
-                await usermobiles.save((err => {
-                    if (err) {
-                        res.sendStatus(400) // loi sever
-                        return;
-                    } else {
-                        // res.sendStatus(200); // ok
+                        // tslint:disable-next-line:no-console
+                        // tslint:disable-next-line:no-console
+                        console.log("userdata", userdatas)
                         res.send({ status: true, msg: "", userdatas });
-
+                        res.send(userdatas)
+                    } catch (e) {
+                        res.send({ status: false, msg: 'Co loi xay ra: ' + e.message })
                     }
-                }));
+                    // res.send('Tài khoản đã tồn tại')
+                    // response.sendStatus(409)// da ton tai
+                    return;
+                } else if (req.body.password.length < 6) {
+                    res.send('Mật khẩu phải lớn hơn hoặc bằng 6 ký tự')
+                    return;
+                } else if (req.body.userName.length < 5) {
+                    res.send("Username phải lớn hơn 5 kí tự")
+                }
             }
-            // else {
-            // }
+            await usermobiles.save((err => {
+                if (err) {
+                    res.sendStatus(400) // loi sever
+                    return;
+                } else {
+                    // res.sendStatus(200); // ok
+                    res.send({ status: true, msg: "", userdatas });
+
+                }
+            }));
+        }
+        // else {
+        // }
 
         // }
 
