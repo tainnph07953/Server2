@@ -1,1 +1,1 @@
-web: npm run ts:node
+web: npm ts:node
