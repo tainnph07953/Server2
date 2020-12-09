@@ -65,7 +65,7 @@ app.use('/api', ApiRouter)
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Starting the server
-app.listen(app.get('port'), () => {
+app.listen(8080, () => {
     // tslint:disable-next-line:no-console
     console.log(`Hello ${app.get('port')}`);
 });
