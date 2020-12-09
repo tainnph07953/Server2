@@ -2,7 +2,6 @@ import express, {NextFunction, Request, Response} from 'express'
 import hbs from 'express-handlebars'
 import path from 'path'
 
-
 // Importing Routes
 import IndexRouter from './routes'
 import LoginRouter from './routes/login'
