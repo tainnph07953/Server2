@@ -1,0 +1,49 @@
+<div id="layoutSidenav_content" >
+    <div class="container-login100" style="background-image: url('images/bg-01.jpg');;{{setMargin}}">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+            <form class="login100-form validate-form" method="post" action="/register">
+					<span class="login100-form-title p-b-49">
+						Đăng ký
+					</span>
+                <div class="wrap-input100 validate-input m-b-23" data-validate = "Vui lòng không để trống">
+                    <span class="label-input100">Tên tài khoản</span>
+                    <input class="input100" type="text" name="userNameRegister" placeholder="Nhập tên tài khoản">
+                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Vui lòng không để trống">
+                    <span class="label-input100">Mật khẩu</span>
+                    <input class="input100" type="password" name="passwordRegister" placeholder="Nhập mật khẩu">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-t-30" data-validate="Vui lòng không để trống">
+                    <span class="label-input100">Nhập lại mật khẩu</span>
+                    <input class="input100" type="password" name="rePasswordRegister" placeholder="Nhập lại mật khẩu">
+                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                </div>
+
+                <div class="text-right p-t-8 p-b-31">
+
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" type="submit">
+                            Đăng ký
+                        </button>
+                    </div>
+                </div>
+                <div class="alert alert-danger m-t-20" {{isShowNotification}}>
+                    <strong>{{status}}</strong> {{content_status}}
+                </div>
+                <div class="flex-col-c p-t-20">
+                    <a href="/login" class="txt2">
+                        Đăng nhập
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

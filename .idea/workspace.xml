@@ -13,15 +13,13 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_9_20,_2_23_CH_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_9_20__2_23_CH__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="Procfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +93,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="ts.external.directory.path" value="D:\DuAnTotNghiep\Server2\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -320,7 +318,56 @@
       <option name="project" value="LOCAL" />
       <updated>1605493508480</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="thêm Procfile">
+      <created>1607499755374</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607499755374</updated>
+    </task>
+    <task id="LOCAL-00011" summary="thêm Procfile">
+      <created>1607499952476</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607499952476</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1607500557967</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607500557967</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Procfile">
+      <created>1607501010939</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501010939</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Procfile">
+      <created>1607501548039</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501548039</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Procfile">
+      <created>1607501800918</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501800919</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Procfile">
+      <created>1607501983105</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607501983105</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,9 +389,11 @@
     <MESSAGE value="Commit code server user and food" />
     <MESSAGE value="/updateLike" />
     <MESSAGE value="updatePassword" />
-    <MESSAGE value="update" />
     <MESSAGE value="updatedoimk" />
-    <option name="LAST_COMMIT_MESSAGE" value="updatedoimk" />
+    <MESSAGE value="thêm Procfile" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Procfile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -506,10 +555,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="250" y="110" key="Vcs.Push.Dialog.v2" timestamp="1607498322450">
+    <state x="250" y="110" key="Vcs.Push.Dialog.v2" timestamp="1607501991098">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="250" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607498322450" />
+    <state x="250" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607501991098" />
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605493416144" />
     <state x="497" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606835910779">
       <screen x="0" y="0" width="1304" height="768" />
