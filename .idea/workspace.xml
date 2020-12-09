@@ -19,8 +19,185 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="Procfile">
+    <list default="true" id="9a277f25-04a3-4146-b1dd-61d3d8d299de" name="Default Changelist" comment="thêm file">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588011309561-Nambdph07444-65280248_643727139387649_8031195033673662464_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012192673-Nambdph07444-65575481_643727836054246_4351949224116486144_o4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012241636-Nambdph07444-65280248_643727139387649_8031195033673662464_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012274541-Nambdph07444-65575481_643727836054246_4351949224116486144_o1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012290557-Nambdph07444-65575481_643727836054246_4351949224116486144_o.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012398749-Nambdph07444-65280248_643727139387649_8031195033673662464_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012476266-Nambdph07444-65575481_643727836054246_4351949224116486144_o1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012550206-Nambdph07444-65575481_643727836054246_4351949224116486144_o1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588012599705-Nambdph07444-nike-air-max-97-sketch-ck9397-100-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588014215800-Nambdph07444-nike-air-max-97-sketch-ck9397-100-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588014325883-Nambdph07444-one.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588014965941-Nambdph07444-two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588015329029-Nambdph07444-two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588015441810-Nambdph07444-three.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588015665194-Nambdph07444-two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588015959411-Nambdph07444-one.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588016049788-Nambdph07444-three.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588102271777-Nambdph07444-nike-air-max-97-sketch-ck9397-100-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588103122774-Nambdph07444-72197627_1675284389278328_3556897309579018240_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180577300-Nambdph07444-nike-air-max-95-habanero-red-black-white-at2865-600-pair.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180607021-Nambdph07444-nike-air-max-97-sketch-ck9397-100-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180636130-Nambdph07444-two.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180661934-Nambdph07444-one.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180695133-Nambdph07444-three.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180765158-Nambdph07444-adidas-Nemeziz-17.3-TF-CP9100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588180801868-Nambdph07444-img_9720_60c1c96caab84ef8b5795279fc3f6823.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588236134990-Nambdph07444-Uno-Sport-Adidas-Nemeziz-18-Initiator-Pack-1-1396x800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/public/uploads/1588236166369-Nambdph07444-nike-premir-2-newlight-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/views/customer/list_customer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/src/views/order/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/addProductController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/customerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/customerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/homeController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/indexController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/lab5Controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/lab5Controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/listProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/listProductController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/loginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/loginController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/notEnoughProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/notEnoughProductController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/orderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/registerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/registerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/controllers/statisticalController.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/controllers/statisticalController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/key.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/key.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/lib/helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/models/Customer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/models/Order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/models/OrderDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/models/Product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/assets/demo/chart-area-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/assets/demo/chart-area-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/assets/demo/chart-bar-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/assets/demo/chart-bar-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/assets/demo/chart-pie-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/assets/demo/chart-pie-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/assets/demo/datatables-demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/assets/demo/datatables-demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/assets/img/error-404-monochrome.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/assets/img/error-404-monochrome.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/css/util.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/css/util.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/images/bg-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/images/bg-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/images/icons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/images/icons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/public/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1606626211477-tainnph07953-photo-1-1592530138830872889472.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1606878905502-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1606880320910-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1606880710913-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607148793860-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607190923789-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607191001947-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607191076427-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607193011493-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607193143910-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607193270167-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607226667043-tainnph07953-chup-san-pham.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607229720350-tainnph07953-Anh1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607263592921-tainnph07953-1.-Sò-huyết-cháy-tỏi-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607263824414-tainnph07953-2.-Chả-cá-lòng-cá-Chả-Cá-Thăng-Long.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607263964491-tainnph07953-3.-Hàu-nướng-phô-mai-hàu-nướng-mỡ-hành.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264098975-tainnph07953-2.-Chả-cá-lòng-cá-Chả-Cá-Thăng-Long.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264159488-tainnph07953-2.-Chả-cá-lòng-cá-Chả-Cá-Thăng-Long.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264184820-tainnph07953-2.-Chả-cá-lòng-cá-Chả-Cá-Thăng-Long.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264314219-tainnph07953-6-Bún-cá-Bún-Cá-Chị-Hạnh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264627178-tainnph07953-7.-Ghẹ-hấp-.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264627201-tainnph07953-foody-oc-nong-pho-dinh-liet-461-636786793186810914.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264627205-tainnph07953-images.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/public/uploads/1607264627206-tainnph07953-mon-an-vat-ngon-ha-noi-16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/add_product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/customer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/lab5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/not_enough_product.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/routes/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/routes/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/routes/statistical.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/routes/statistical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/Json/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/favorite/list_favorite.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/home/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/home/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/layouts/main.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/layouts/main.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/login/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/login/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/not_enough_product/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/not_enough_product/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/partials/css.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/partials/css.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/partials/javascript.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/partials/javascript.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/partials/navigation.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/partials/navigation.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/products/add_product/add.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/products/add_product/add.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/products/list_product.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/products/list_product.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/register/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/views/register/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/userInformation/add_userInformation.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/userInformation/list_information.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/vote/add_vote.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/views/vote/list_vote.hbs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +256,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -97,19 +275,25 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/build/src/routes" />
+      <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$/build/src" />
+      <recent name="$PROJECT_DIR$/build" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
       <recent name="D:\DuAnTotNghiep\Server\src\controllers" />
       <recent name="$PROJECT_DIR$/src/views/favorite" />
       <recent name="D:\ProjectServer\Typescript\Assignment\src\views\enough_product" />
       <recent name="D:\ProjectServer\Typescript\Assignment\src\views\products\add_product" />
-      <recent name="D:\ProjectServer\Typescript\Assignment\src\public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ProjectServer\Typescript\Assignment\src\views\products" />
-      <recent name="D:\ProjectServer\Typescript\Assignment\src\public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Node.js.add_product.js">
+    <configuration name="add_product.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/build/src/routes/add_product.js" working-dir="$PROJECT_DIR$/build/src/routes">
+      <method v="2" />
+    </configuration>
     <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -132,15 +316,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.add_product.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.clean" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.clean" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -254,6 +438,7 @@
       <workItem from="1606550493469" duration="1425000" />
       <workItem from="1606724588269" duration="718000" />
       <workItem from="1606835882609" duration="207000" />
+      <workItem from="1607502957956" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="Commit code server user and food">
       <created>1604461980918</created>
@@ -367,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607501983105</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="thêm file">
+      <created>1607503167373</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607503167373</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -393,7 +585,8 @@
     <MESSAGE value="thêm Procfile" />
     <MESSAGE value="update" />
     <MESSAGE value="Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Procfile" />
+    <MESSAGE value="thêm file" />
+    <option name="LAST_COMMIT_MESSAGE" value="thêm file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="401" y="85" key="#Inspections" timestamp="1604305356660">
@@ -419,9 +612,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2566" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1920.977/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602817790716" />
-    <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604290139269">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="386" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607505025003">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="386" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800@0.0.1280.800" timestamp="1607505025003" />
     <state x="393" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1304.768@0.0.1304.768" timestamp="1604290139269" />
     <state x="398" y="0" key="CommitChangelistDialog2" timestamp="1605493507344">
       <screen x="0" y="0" width="1304" height="768" />
@@ -451,34 +645,34 @@
       <screen x="0" y="23" width="1920" height="974" />
     </state>
     <state width="1894" height="309" key="GridCell.Tab.-1.right/0.23.1920.974@0.23.1920.974" timestamp="1603899112504" />
-    <state width="1259" height="176" key="GridCell.Tab.0.bottom" timestamp="1607498629054">
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom" timestamp="1607505019559">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="176" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607498629054" />
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1607505019559" />
     <state width="1283" height="189" key="GridCell.Tab.0.bottom/0.0.1304.768@0.0.1304.768" timestamp="1606552777907" />
     <state width="1515" height="348" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1604981140044" />
     <state width="1894" height="248" key="GridCell.Tab.0.bottom/0.23.1920.972@0.23.1920.972" timestamp="1603898989408" />
     <state width="1894" height="309" key="GridCell.Tab.0.bottom/0.23.1920.974@0.23.1920.974" timestamp="1603899173057" />
-    <state width="1259" height="176" key="GridCell.Tab.0.center" timestamp="1607498629052">
+    <state width="1259" height="176" key="GridCell.Tab.0.center" timestamp="1607505019557">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="176" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607498629052" />
+    <state width="1259" height="176" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1607505019557" />
     <state width="1283" height="189" key="GridCell.Tab.0.center/0.0.1304.768@0.0.1304.768" timestamp="1606552777907" />
     <state width="1515" height="348" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1604981140044" />
     <state width="1894" height="248" key="GridCell.Tab.0.center/0.23.1920.972@0.23.1920.972" timestamp="1603898989407" />
     <state width="1894" height="309" key="GridCell.Tab.0.center/0.23.1920.974@0.23.1920.974" timestamp="1603899173056" />
-    <state width="1259" height="176" key="GridCell.Tab.0.left" timestamp="1607498629052">
+    <state width="1259" height="176" key="GridCell.Tab.0.left" timestamp="1607505019556">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="176" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607498629052" />
+    <state width="1259" height="176" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1607505019556" />
     <state width="1283" height="189" key="GridCell.Tab.0.left/0.0.1304.768@0.0.1304.768" timestamp="1606552777906" />
     <state width="1515" height="348" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1604981140043" />
     <state width="1894" height="248" key="GridCell.Tab.0.left/0.23.1920.972@0.23.1920.972" timestamp="1603898989406" />
     <state width="1894" height="309" key="GridCell.Tab.0.left/0.23.1920.974@0.23.1920.974" timestamp="1603899173056" />
-    <state width="1259" height="176" key="GridCell.Tab.0.right" timestamp="1607498629053">
+    <state width="1259" height="176" key="GridCell.Tab.0.right" timestamp="1607505019558">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607498629053" />
+    <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1607505019558" />
     <state width="1283" height="189" key="GridCell.Tab.0.right/0.0.1304.768@0.0.1304.768" timestamp="1606552777907" />
     <state width="1515" height="348" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1604981140044" />
     <state width="1894" height="248" key="GridCell.Tab.0.right/0.23.1920.972@0.23.1920.972" timestamp="1603898989408" />
@@ -555,10 +749,10 @@
       <screen x="1920" y="23" width="1920" height="1057" />
     </state>
     <state x="2639" y="183" key="SettingsEditor/0.23.1920.974/1920.23.1920.1057@1920.23.1920.1057" timestamp="1602818660017" />
-    <state x="250" y="110" key="Vcs.Push.Dialog.v2" timestamp="1607501991098">
+    <state x="250" y="110" key="Vcs.Push.Dialog.v2" timestamp="1607503174641">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="250" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607501991098" />
+    <state x="250" y="110" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1607503174641" />
     <state x="255" y="106" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1605493416144" />
     <state x="497" y="305" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606835910779">
       <screen x="0" y="0" width="1304" height="768" />
@@ -596,16 +790,5 @@
     </state>
     <state x="367" y="0" width="672" height="678" key="search.everywhere.popup/0.0.1304.768@0.0.1304.768" timestamp="1604830054883" />
     <state x="2461" y="23" key="search.everywhere.popup/0.23.1920.1057/1920.23.1920.974@1920.23.1920.974" timestamp="1602753877594" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/routes/api.ts</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

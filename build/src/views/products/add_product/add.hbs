@@ -1,31 +1,32 @@
 <div class="container mt-5" style="padding-bottom: 20%">
     <form action="/add_product" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="exampleInputEmail1">Tên cửa hàng</label>
-            <input type="text" name="name" class="form-control" id="exampleInputEmail1"
-                   aria-describedby="emailHelp"
-                   placeholder="Nhập tên cửa hàng của bạn">
+            <label for="exampleInputEmail1">Tên sản phẩm</label>
+            <input type="text" name="nameProduct" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                   placeholder="Nhập tên sản phẩm">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Số điện thoại:</label>
-            <input name="phone" type="text" class="form-control" id="exampleInputPassword1" placeholder="Nhập số điện thoại">
+            <label for="exampleInputPassword1">Giá</label>
+            <input name="price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Nhập giá">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Ngày đăng kí:</label>
-            <input name="date" type="datetime-local" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1">Số lượng</label>
+            <input name="amount" type="number" class="form-control" id="exampleInputPassword1" placeholder="Nhập số lượng">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Trạng thái </label>
-            <select name="status" type="text" class="form-control" id="trangthai">
-                <option>Hoạt động</option>
-                <option>Không hoạt động</option>
-            </select>
+            <label for="exampleInputPassword1">Hãng</label>
+            <input name="brand" type="text" class="form-control" id="exampleInputPassword1" placeholder="Nhập hãng">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Size</label>
+            <input name="size" type="number" class="form-control" id="exampleInputPassword1" placeholder="Nhập kích thước">
         </div>
         <div class="btn btn-outline-success btn-rounded waves-effect btn-sm float-left w-full text-left">
             <span>Choose file</span>
-            <input type="file" name="selectFile" multiple>
+            <input type="file" name="selectFile" >
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Thêm cửa hàng</button>
+        <button type="submit" class="btn btn-primary mt-3">Thêm sản phẩm</button>
     </form>
+
 </div>
 
