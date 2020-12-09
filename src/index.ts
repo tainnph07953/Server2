@@ -60,7 +60,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(PORT);
 
 app.post('/food', async (req: Request, res: Response) => {
-    const foodter = {
+    const foodter: any = {
         name: req.body.name,
         price: req.body.price,
         urlImage: req.body.urlImage,
@@ -84,7 +84,7 @@ app.post('/food', async (req: Request, res: Response) => {
 });
 
 app.post('/signupuser', async (req: Request, res: Response) => {
-    const user = {
+    const user: any = {
         userName: req.body.userName,
         password: req.body.password
     };
