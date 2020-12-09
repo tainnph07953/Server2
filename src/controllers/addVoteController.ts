@@ -27,7 +27,7 @@ class AddVoteController {
 
     public async uploadInformation(request: Request, response: Response): Promise<void> {
         const upload = multer({ storage, limits: { fieldSize: 10 * 1024 * 1024 } }).array('Image', 10)
-        upload(request, response, (err) => {
+        upload(request, response, (err: any) => {
             if (err) {
                 response.send(err)
                 return

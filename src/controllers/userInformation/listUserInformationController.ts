@@ -39,7 +39,7 @@ class ListUserInformationController{
 
     public async update(request: Request, response: Response): Promise<void> {
         const upload = await multer({storage}).single('image')
-        upload(request, response, (err) => {
+        upload(request, response, (err: any) => {
             if (err) {
                 response.send(err)
                 return
