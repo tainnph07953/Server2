@@ -15,7 +15,10 @@ const storage = multer.diskStorage({
             return callback(new Error('Sai dinh dang'), "");
         }
         const newNameFile = `${Date.now()}-tainnph07953-${files.originalname}`
-        nameImage.push(`uploads/${newNameFile}`);
+       const abc=  nameImage.push(`uploads/${newNameFile}`);
+       console.log('45678',abc);
+    
+    //    const image= abc.map(x =>{}) 
         callback(null, newNameFile);
     }
 });
@@ -53,6 +56,7 @@ class AddVoteController {
                         dislike: []
                     });
                     vote.save();
+                    console.log(vote)
                 }
             }).catch(() => { }).finally(() => {
                 nameImage = []

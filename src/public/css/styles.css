@@ -9968,6 +9968,7 @@ a.text-dark:hover, a.text-dark:focus {
 html,
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 .container,
@@ -10012,6 +10013,8 @@ body {
   flex-grow: 1;
   min-height: calc(100vh - 56px);
   margin-left: -225px;
+  overflow: auto;
+  height: 100vh;
 }
 
 .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {
