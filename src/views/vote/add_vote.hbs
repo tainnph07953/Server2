@@ -1,14 +1,16 @@
 <div class="container mt-5" style="padding-bottom: 20%">
-    <form action="/add_vote" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Tên món ăn</label>
-            <input type="text" name="tenMonAn" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                   placeholder="Tên món ăn">
+    <form class="login100-form validate-form" action="/add_vote" method="post" enctype="multipart/form-data">
+          <div class="wrap-input100 validate-input m-b-23" data-validate="Vui lòng không để trống tên món ăn">
+            <span class="label-input100">Tên món ăn</span>
+            <input formControlName="name" class="input100" type="text" name="tenMonAn"
+                placeholder="Nhập tên món ăn">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Tên cửa hàng</label>
-            <input name="tenCuaHang" type="text" class="form-control" id="exampleInputPassword1"
-                   placeholder="Tên cửa hàng">
+        <div class="wrap-input100 validate-input m-b-23" data-validate="Vui lòng không để trống tên cửa hàng">
+            <span class="label-input100">Tên cửa hàng</span>
+            <input formControlName="name" class="input100" type="text" name="tenCuaHang"
+                placeholder="Nhập tên cửa hàng">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
         </div>
         <div class="form-group">
             <div class="row">
@@ -32,22 +34,28 @@
                 </div>
             </div>
         </div>
-        <div class="form-group">
+        {{!-- <div class="form-group">
             <label for="exampleInputPassword1">Nhập tên đường</label>
             <input name="tenDuong" type="text" class="form-control" id="exampleInputPassword1"
-                   placeholder="Nhập tên đường của bạn">
+                placeholder="Nhập tên đường của bạn">
+        </div> --}}
+            <div class="wrap-input100 validate-input m-b-23" data-validate="Không để trống tên đường">
+            <span class="label-input100">Nhập tên đường</span>
+            <input formControlName="name" class="input100" type="text" name="tenDuong"
+                placeholder="Nhập tên đường">
+            <span class="focus-input100" data-symbol="&#xf206;"></span>
         </div>
         <div class="form-group">
             <div class="row">
                 <div class="col">
                     <label for="exampleInputPassword1">Giờ mở cửa </label>
                     <input name="gioMoCua" type="time" id="default-picker" class="form-control"
-                           placeholder="Giờ mở cửa">
+                        placeholder="Giờ mở cửa">
                 </div>
                 <div class="col">
                     <label for="exampleInputPassword1">Giờ đóng cửa </label>
                     <input name="gioDongCua" type="time" id="default-picker" class="form-control"
-                           placeholder="Giờ đóng cửa">
+                        placeholder="Giờ đóng cửa">
                 </div>
             </div>
         </div>

@@ -16,6 +16,7 @@ import LoginRouter from './routes/login'
 import ProductRouter from './routes/product'
 import RegisterRouter from './routes/register'
 import VoteRouter from "./routes/vote"
+import FeedBackRouter from "./routes/feedback"
 const PORT : string|number = process.env.PORT || 5000;
 // Initializations
 const app = express();
@@ -49,6 +50,7 @@ app.use('/add_vote', AddVote)
 app.use('/vote', VoteRouter)
 app.use('/add_userInformation', AddInformation)
 app.use('/information', InformationRouter)
+app.use('/feedback', FeedBackRouter)
 app.use('/api', ApiRouter)
 
 
@@ -104,18 +106,6 @@ app.post('/signupuser', async (req: Request, res: Response) => {
     }
 
 });
-// app.post('/updatePassword', async (req: Request,res: Response)=>{
-//     const id = req.params.id;
-//     const user = req.body;
-//     const options = {new: true};
-//     UserInformationModel.findByIdAndUpdate(id, user, (err: any, book: any)=>{
-//         if (err){
-//             res.send(err);
-//         }else {
-//             res.send("thanhcong");
-//         }
-//     })
-// })
 app.post('/signinuser', async (req: Request, res: Response) => {
     const user = {
         userName: req.body.userName,
